@@ -1,0 +1,49 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2%;
+  height: 50px;
+}
+
+.nav-item {
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #ffffff;
+  background-color: #ff4e21;
+  border: solid #ff4e21;
+  width: 161px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.brand {
+  font-weight: 700;
+}
+.logo {
+  font-size: 1rem;
+  background-color: #ff4e21;
+  padding: 5px 8px 5px 10px;
+  border-radius: 7.71px;
+  color: #ffffff;
+}
+
+.dot-logo {
+  color: #20211e;
+}
+
+.brand-name {
+  margin-left: 14px;
+  font-size: 1.5rem;
+}
