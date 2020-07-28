@@ -4,8 +4,9 @@
   align-items: center;
   margin-left: 10%;
   margin-right: 10%;
-  padding-top: 2%;
-  height: 50px;
+  padding-top: 44px;
+  padding-bottom: 82px;
+  height: 40px;
 }
 
 .main-navigation {
@@ -13,6 +14,7 @@
   justify-content: space-between;
   align-items: center;
   width: 594px;
+  color: #ffffff;
 }
 
 .nav-item {
@@ -37,13 +39,13 @@ button {
 
 .brand {
   font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .logo {
-  font-size: 1rem;
-  background-color: #ff4e21;
-  padding: 5px 8px 5px 10px;
-  border-radius: 7.71px;
-  color: #ffffff;
+  height: 30px;
+  width: 30px;
 }
 
 .dot-logo {
@@ -53,4 +55,5 @@ button {
 .brand-name {
   margin-left: 14px;
   font-size: 1.5rem;
+  color: #ffffff;
 }

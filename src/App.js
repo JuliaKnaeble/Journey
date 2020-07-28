@@ -6,7 +6,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <div className="image">
+      <div className="background overlay">
         <Navbar />
         <Header />
       </div>

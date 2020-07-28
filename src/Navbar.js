@@ -6,8 +6,12 @@ const Navbar = () => {
     <nav className="Navbar">
       <div className="main-navigation">
         <p className="brand">
-          <span className="logo">
-            J<span className="dot-logo">.</span>
+          <span>
+            <img
+              src={require(`./Assets/app_logo@2x.png`)}
+              alt=""
+              className="logo"
+            />
           </span>
           <span className="brand-name">Journey</span>
         </p>
