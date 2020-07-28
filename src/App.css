@@ -4,11 +4,11 @@
 }
 
 .background {
-  background-image: url(./Assets/background.jpg);
   height: 100%;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
+  box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.5);
 }
