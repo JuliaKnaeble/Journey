@@ -1,0 +1,41 @@
+.Header {
+  margin-left: 10%;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 61px;
+  height: 122px;
+  width: 594px;
+  margin-top: 261px;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 1.12rem;
+  line-height: 28px;
+  height: 56px;
+  width: 500px;
+  margin-bottom: 32px;
+}
+
+.try-now {
+  font-weight: 700;
+  font-size: 1.12rem;
+  height: 28px;
+  margin-left: 10px;
+  margin-bottom: 320px;
+}
+
+.try-arrow {
+  padding-right: 6px;
+  padding-left: 6px;
+  height: 24px;
+  font-size: 1.12rem;
+  font-weight: 700;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: black;
+}

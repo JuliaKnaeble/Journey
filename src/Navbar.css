@@ -4,8 +4,15 @@
   align-items: center;
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 2%;
+  padding-top: 2%;
   height: 50px;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 594px;
 }
 
 .nav-item {
