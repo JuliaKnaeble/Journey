@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import Header from "./Header";
 import background from "./Assets/background.jpg";
 import Paragraph from "./Paragraph";
+import MobileDisplay from "./MobileDisplay";
 import "./App.css";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Header />
       </div>
       <Paragraph />
+      <MobileDisplay />
     </div>
   );
 }

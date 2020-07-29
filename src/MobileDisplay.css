@@ -1,0 +1,19 @@
+.MobileDisplay {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 128px;
+  margin-right: 128px;
+}
+
+.mobile {
+  width: 305px;
+  height: 659px;
+}
+
+.side {
+  padding-top: 167px;
+}
+
+.middle {
+  padding-top: 89px;
+}
