@@ -9,12 +9,15 @@
   width: 305px;
   height: 659px;
   z-index: 10;
+  border-radius: 30px;
+  border-top: none;
+  box-shadow: 2px 2px 10px #d2d6d8;
 }
 
 .side {
-  padding-top: 167px;
+  margin-top: 167px;
 }
 
 .middle {
-  padding-top: 89px;
+  margin-top: 89px;
 }
