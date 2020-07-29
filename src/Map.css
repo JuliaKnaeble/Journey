@@ -1,0 +1,42 @@
+.Map {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 238px;
+}
+
+.header-map {
+  margin: 0;
+  color: #2a2a2a;
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 40px;
+}
+
+.image-map {
+  width: 386px;
+  height: 205px;
+  position: relative;
+}
+
+.text-map {
+  margin: 0;
+  padding-top: 33px;
+  color: #2a2a2a;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 36px;
+  padding-bottom: 238px;
+}
+
+.dot-map {
+  margin: 0;
+  width: 10px;
+  height: 10px;
+  border: 8px solid #ff4e21;
+  border-radius: 50%;
+  position: relative;
+  bottom: 15px;
+  right: 5px;
+}

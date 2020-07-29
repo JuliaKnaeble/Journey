@@ -8,6 +8,7 @@
 .mobile {
   width: 305px;
   height: 659px;
+  z-index: 10;
 }
 
 .side {

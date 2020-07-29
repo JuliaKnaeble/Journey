@@ -4,9 +4,9 @@ import "./Paragraph.css";
 const Paragraph = () => {
   return (
     <div className="Paragraph">
-      <p className="dot-decoration top"></p>
-      <h3 className="header">Multiple ways to view your Journey</h3>
-      <p className="header-paragraph">
+      <p className="dot-paragraph top"></p>
+      <h3 className="header-paragraph">Multiple ways to view your Journey</h3>
+      <p className="text-paragraph">
         Easily navigate between views to get the best idea of how your Journey
         is laid out.
         <br />
@@ -15,7 +15,7 @@ const Paragraph = () => {
         <br />
         sure you have time to do everything you planned.
       </p>
-      <p className="dot-decoration bottom"></p>
+      <p className="dot-paragraph bottom"></p>
     </div>
   );
 };
