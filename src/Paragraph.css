@@ -21,3 +21,22 @@
   font-size: 1.125rem;
   line-height: 36px;
 }
+
+.dot-decoration {
+  margin: 0;
+  width: 10px;
+  height: 10px;
+  border: 8px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  position: relative;
+}
+
+.top {
+  left: 15%;
+  top: 45px;
+}
+
+.bottom {
+  left: 73%;
+  top: 60px;
+}
