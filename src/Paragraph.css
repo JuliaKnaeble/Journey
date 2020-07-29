@@ -1,0 +1,23 @@
+.Paragraph {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.header {
+  margin: 0;
+  color: #ff4e21;
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 40px;
+  padding-top: 71px;
+  padding-bottom: 31px;
+}
+
+.header-paragraph {
+  margin: 0;
+  color: #2a2a2a;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 36px;
+}

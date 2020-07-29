@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import Header from "./Header";
 import background from "./Assets/background.jpg";
+import Paragraph from "./Paragraph";
 import "./App.css";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Navbar />
         <Header />
       </div>
+      <Paragraph />
     </div>
   );
 }
