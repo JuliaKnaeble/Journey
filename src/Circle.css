@@ -1,7 +1,7 @@
 .circle-container {
   position: absolute;
-  width: 1200px;
-  height: 1200px;
+  width: 1030px;
+  height: 1030px;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -11,7 +11,7 @@
 .circle {
   clip-path: circle(50% at 63% 50%);
   background-color: #ff4e21;
-  opacity: 3%;
+  opacity: 5%;
   width: 100%;
   height: 100%;
   position: relative;
