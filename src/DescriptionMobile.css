@@ -39,7 +39,9 @@
 
 .header-second {
   margin-left: 192px;
-  margin-top: 374px;
+  margin-top: 170px;
+  position: relative;
+  z-index: 10;
 }
 
 .paragraph-first,
@@ -77,6 +79,7 @@
 }
 
 .dot-description-mobile-second {
-  top: 350px;
+  top: 150px;
   left: 190px;
+  z-index: 10;
 }

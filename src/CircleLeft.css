@@ -1,7 +1,7 @@
 .circle-container-left {
   position: absolute;
-  width: 1030px;
-  height: 1030px;
+  width: 1130px; /*changed */
+  height: 1130px; /*changed */
   left: 0;
   right: 0;
   margin-left: 0; /*changed */
@@ -9,9 +9,9 @@
 }
 
 .circle-left {
-  clip-path: circle(50% at 35% 50%); /*changed */
+  clip-path: circle(50% at 45% 50%); /*changed */
   background-color: #ff4e21;
-  opacity: 3%;
+  opacity: 5%;
   width: 100%;
   height: 100%;
   position: relative;
@@ -23,7 +23,7 @@
   width: 55%;
   height: 55%;
   background-color: #0a0b10; /*changed */
-  bottom: 195%; /*changed */
+  bottom: 197%; /*changed */
   position: relative;
-  left: 7%; /*changed */
+  left: 15%; /*changed */
 }

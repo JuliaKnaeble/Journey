@@ -16,8 +16,12 @@
 
 .DescriptionMobile {
   background-color: #0a0b10;
-  background-image: linear-gradient(to top left, transparent 50%, #f8f9fa 51%),
-    linear-gradient(to bottom right, transparent 50%, #f8f9fa 51%);
+  background-image: linear-gradient(
+      to top left,
+      #0a0b10 50%,
+      #faf8f8 calc(50% + 2px)
+    ),
+    linear-gradient(to bottom right, #0a0b10 50%, #faf8f8 calc(50% + 2px));
   background-position: 0 0, 100% 100%;
   background-size: 100% 180px; /* 180px is controling the angle*/
   background-repeat: no-repeat;
