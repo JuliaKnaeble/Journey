@@ -1,6 +1,7 @@
 .MobileDisplay {
   display: flex;
   justify-content: space-between;
+  margin: 0;
   margin-left: 9.4%;
   margin-right: 9.4%;
 }
@@ -19,7 +20,7 @@
   margin-top: 89px;
 }
 
-@media (min-width: 1050px) {
+@media (min-width: 1550px) {
   .MobileDisplay {
     margin-left: 19.4%;
     margin-right: 19.4%;
