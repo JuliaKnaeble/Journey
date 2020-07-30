@@ -10,8 +10,7 @@
 
 .circle {
   clip-path: circle(50% at 63% 50%);
-  background-color: #ff4e21;
-  opacity: 5%;
+  background-color: rgba(255, 78, 33, 0.05);
   width: 100%;
   height: 100%;
   position: relative;
