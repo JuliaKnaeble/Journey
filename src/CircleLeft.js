@@ -1,11 +1,11 @@
 import React from "react";
 import "./CircleLeft.css";
 
-const CircleLeft = () => {
+const CircleLeft = (props) => {
   return (
-    <div className="circle-container-left">
-      <div className="circle-left"></div>
-      <div className="clircle-center-left"></div>
+    <div className="circle-container-three" style={props.main}>
+      <div className="circle-three"></div>
+      <div className="clircle-center-three" style={props.center}></div>
     </div>
   );
 };

@@ -18,11 +18,7 @@ const Map = () => {
         </p>
       </div>
       <div>
-        <img
-          src={require(`./Assets/map_path@2x.png`)}
-          alt=""
-          className="image-map"
-        />
+        <img src={require(`./Assets/map.png`)} alt="" className="image-map" />
       </div>
     </div>
   );

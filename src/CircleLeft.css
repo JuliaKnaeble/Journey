@@ -1,28 +1,25 @@
-.circle-container-left {
+.circle-container-three {
   position: absolute;
-  width: 1130px; /*changed */
-  height: 1130px; /*changed */
   left: 0;
   right: 0;
-  margin-left: 0; /*changed */
-  margin-right: auto; /*changed */
+  margin-left: 0;
+  margin-right: auto;
 }
 
-.circle-left {
-  clip-path: circle(50% at 45% 50%); /*changed */
+.circle-three {
+  clip-path: circle(50% at 45% 50%);
   background-color: rgba(255, 78, 33, 0.05);
   width: 100%;
   height: 100%;
   position: relative;
-  bottom: 120%; /*changed */
+  bottom: 120%;
 }
 
-.clircle-center-left {
+.clircle-center-three {
   clip-path: circle(50% at 50% 50%);
   width: 55%;
   height: 55%;
-  background-color: #0a0b10; /*changed */
-  bottom: 197%; /*changed */
+  bottom: 197%;
   position: relative;
-  left: 15%; /*changed */
+  left: 15%;
 }

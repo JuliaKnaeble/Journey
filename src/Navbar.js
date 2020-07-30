@@ -8,7 +8,7 @@ const Navbar = () => {
         <p className="brand">
           <span>
             <img
-              src={require(`./Assets/app_logo@2x.png`)}
+              src={require(`./Assets/app_logo.png`)}
               alt=""
               className="logo"
             />

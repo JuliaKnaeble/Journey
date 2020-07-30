@@ -1,7 +1,7 @@
 import React from "react";
-import "./Circle.css";
+import "./CircleRight.css";
 
-const Circle = () => {
+const CircleRight = () => {
   return (
     <div className="circle-container">
       <div className="circle"></div>
@@ -10,4 +10,4 @@ const Circle = () => {
   );
 };
 
-export default Circle;
+export default CircleRight;

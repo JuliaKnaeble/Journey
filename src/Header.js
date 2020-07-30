@@ -29,7 +29,7 @@ const Header = () => {
       </div>
       <div>
         <img
-          src={require(`./Assets/hero_image.png`)}
+          src={require(`./Assets/header_image.png`)}
           alt=""
           className="hero-image"
         />

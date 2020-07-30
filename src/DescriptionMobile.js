@@ -7,7 +7,7 @@ const DescriptionMobile = () => {
       <div className="description-mobile-first">
         <div>
           <img
-            src={require(`./Assets/mobile_start@2x.png`)}
+            src={require(`./Assets/explore.png`)}
             alt=""
             className="mobile-start"
           />
@@ -46,7 +46,7 @@ const DescriptionMobile = () => {
         </div>
         <div>
           <img
-            src={require(`./Assets/mobile_end@2x.png`)}
+            src={require(`./Assets/pick.png`)}
             alt=""
             className="mobile-end"
           />

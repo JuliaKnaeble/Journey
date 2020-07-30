@@ -1,21 +1,21 @@
 import React from "react";
 import "./MobileDisplay.css";
 
-const MobileDisplay = () => {
+const MobileDisplay = (props) => {
   return (
     <div className="MobileDisplay">
       <img
-        src={require(`./Assets/first_left_phone@2x.png`)}
+        src={require(`./Assets/${props.mobileOne}.png`)}
         alt=""
         className="mobile side"
       />
       <img
-        src={require(`./Assets/first_middle_phone@2x.png`)}
+        src={require(`./Assets/${props.mobileTwo}.png`)}
         alt=""
         className="mobile middle"
       />
       <img
-        src={require(`./Assets/first_right_phone@2x.png`)}
+        src={require(`./Assets/${props.mobileThree}.png`)}
         alt=""
         className="mobile side"
       />

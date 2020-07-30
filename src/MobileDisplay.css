@@ -9,9 +9,6 @@
   width: 305px;
   height: 659px;
   z-index: 10;
-  border-radius: 30px;
-  border-top: none;
-  box-shadow: 2px 2px 10px #d2d6d8;
 }
 
 .side {
