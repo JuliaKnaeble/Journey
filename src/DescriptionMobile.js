@@ -13,6 +13,7 @@ const DescriptionMobile = () => {
           />
         </div>
         <div>
+          <p className="dot-description-mobile-first"></p>
           <h5 className="header-first">
             Explore neighborhoods with
             <br />
@@ -29,6 +30,7 @@ const DescriptionMobile = () => {
       </div>
       <div className="description-mobile-second">
         <div>
+          <p className="dot-description-mobile-second"></p>
           <h5 className="header-second">
             Pick and choose the things that
             <br />

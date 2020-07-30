@@ -61,3 +61,22 @@
 .paragraph-second {
   margin-left: 192px;
 }
+
+.dot-description-mobile-first,
+.dot-description-mobile-second {
+  margin: 0;
+  width: 10px;
+  height: 10px;
+  border: 8px solid #ff4e21;
+  border-radius: 50%;
+  position: relative;
+}
+
+.dot-description-mobile-first {
+  top: 240px;
+}
+
+.dot-description-mobile-second {
+  top: 350px;
+  left: 190px;
+}
