@@ -18,11 +18,11 @@
   bottom: 40%;
 }
 
-.clircle-trans {
+.clircle-center {
   clip-path: circle(50% at 50% 50%);
   width: 55%;
   height: 55%;
-  background-color: #e8ecf0;
+  background-color: #f8f9fa;
   bottom: 120%;
   position: relative;
   left: 36%;

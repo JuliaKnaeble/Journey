@@ -1,0 +1,29 @@
+.circle-container-left {
+  position: absolute;
+  width: 1030px;
+  height: 1030px;
+  left: 0;
+  right: 0;
+  margin-left: 0; /*changed */
+  margin-right: auto; /*changed */
+}
+
+.circle-left {
+  clip-path: circle(50% at 35% 50%); /*changed */
+  background-color: #ff4e21;
+  opacity: 3%;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  bottom: 120%; /*changed */
+}
+
+.clircle-center-left {
+  clip-path: circle(50% at 50% 50%);
+  width: 55%;
+  height: 55%;
+  background-color: #0a0b10; /*changed */
+  bottom: 195%; /*changed */
+  position: relative;
+  left: 7%; /*changed */
+}
