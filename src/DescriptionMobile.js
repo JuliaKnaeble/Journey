@@ -12,7 +12,7 @@ const DescriptionMobile = () => {
             className="mobile-start"
           />
         </div>
-        <div>
+        <div className="description-indent-first">
           <p className="dot-description-mobile-first"></p>
           <h5 className="header-first">
             Explore neighborhoods with
@@ -29,7 +29,7 @@ const DescriptionMobile = () => {
         </div>
       </div>
       <div className="description-mobile-second">
-        <div>
+        <div className="description-indent-second">
           <p className="dot-description-mobile-second"></p>
           <h5 className="header-second">
             Pick and choose the things that

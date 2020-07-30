@@ -1,6 +1,8 @@
 .Header {
-  margin-left: 10%;
+  margin-left: 11.7%;
   display: flex;
+  justify-content: space-between;
+  margin-right: 10.6%;
 }
 
 h1 {
@@ -45,5 +47,4 @@ h2 {
 .hero-image {
   width: 394px;
   height: 512px;
-  padding-left: 73px;
 }

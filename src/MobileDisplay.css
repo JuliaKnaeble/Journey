@@ -1,8 +1,8 @@
 .MobileDisplay {
   display: flex;
   justify-content: space-between;
-  margin-left: 128px;
-  margin-right: 128px;
+  margin-left: 9.4%;
+  margin-right: 9.4%;
 }
 
 .mobile {
