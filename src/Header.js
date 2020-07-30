@@ -19,7 +19,7 @@ const Header = () => {
           <span>
             {" "}
             <img
-              src={require(`./Assets/arrow_circle.png`)}
+              src="https://i.imgur.com/GHRmxdJ.png"
               alt=""
               className="try-arrow"
             />

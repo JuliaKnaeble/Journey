@@ -57,3 +57,10 @@ button {
   font-size: 1.5rem;
   color: #ffffff;
 }
+
+@media (min-width: 1050px) {
+  .Navbar {
+    margin-left: 21.7%;
+    margin-right: 21.7%;
+  }
+}

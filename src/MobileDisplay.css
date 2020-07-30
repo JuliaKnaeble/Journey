@@ -18,3 +18,10 @@
 .middle {
   margin-top: 89px;
 }
+
+@media (min-width: 1050px) {
+  .MobileDisplay {
+    margin-left: 19.4%;
+    margin-right: 19.4%;
+  }
+}

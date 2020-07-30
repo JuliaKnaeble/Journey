@@ -40,3 +40,10 @@
   bottom: 15px;
   right: 5px;
 }
+
+@media (min-width: 1050px) {
+  .Map {
+    margin-left: 22.5%;
+    margin-right: 22.5%;
+  }
+}

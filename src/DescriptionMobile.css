@@ -74,3 +74,19 @@
   left: 1%;
   z-index: 10;
 }
+
+@media (min-width: 1050px) {
+  .description-mobile-first {
+    margin-left: 28.2%;
+  }
+
+  .description-mobile-second {
+    margin-right: 25.1%;
+  }
+  .description-indent-first {
+    margin-right: 23.3%;
+  }
+  .description-indent-second {
+    margin-left: 24.1%;
+  }
+}
