@@ -18,18 +18,26 @@
 }
 
 .nav-item {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.875rem;
+  color: rgba(255, 255, 255, 1);
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-position: under;
 }
 
 .nav-item:hover {
   cursor: pointer;
-  text-decoration: underline;
+  color: #ff4e21;
+  text-decoration-color: rgba(255, 255, 255, 0.5);
   font-weight: 700;
+  text-underline-position: under;
 }
 
 button {
@@ -57,6 +65,7 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 15px;
 }
 .logo {
   height: 30px;
