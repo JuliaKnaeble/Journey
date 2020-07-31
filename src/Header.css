@@ -37,13 +37,40 @@ h2 {
   font-size: 1.12rem;
   height: 28px;
   color: #f8f9fa;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  cursor: pointer;
+  user-select: none;
 }
 
-.try-now:hover {
-  cursor: pointer;
-  color: #ff4e21;
+.word span:nth-child(1).active {
+  animation: falling 2s ease-out;
+  transform-origin: bottom center;
+}
+
+@keyframes falling {
+  12% {
+    transform: rotateX(240deg);
+  }
+
+  24% {
+    transform: rotateX(150deg);
+  }
+
+  36% {
+    transform: rotateX(200deg);
+  }
+
+  48% {
+    transform: rotateX(175deg);
+  }
+
+  60%,
+  85% {
+    transform: rotateX(180deg);
+  }
+
+  100% {
+    transform: rotateX(0deg);
+  }
 }
 
 .try-arrow {
