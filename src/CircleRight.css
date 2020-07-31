@@ -1,7 +1,5 @@
 .circle-container {
   position: absolute;
-  width: 1030px;
-  height: 1030px;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -14,7 +12,7 @@
   width: 100%;
   height: 100%;
   position: relative;
-  bottom: 40%;
+  bottom: 35%;
 }
 
 .clircle-center {
@@ -22,7 +20,7 @@
   width: 55%;
   height: 55%;
   background-color: #f8f9fa;
-  bottom: 120%;
+  bottom: 115%;
   position: relative;
   left: 36%;
 }

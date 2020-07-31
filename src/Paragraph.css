@@ -12,6 +12,8 @@
   line-height: 40px;
   padding-top: 71px;
   padding-bottom: 31px;
+  position: relative;
+  z-index: 10;
 }
 
 .text-paragraph {
@@ -21,6 +23,8 @@
   font-size: 1.125rem;
   line-height: 36px;
   white-space: pre-wrap;
+  position: relative;
+  z-index: 10;
 }
 
 .dot-paragraph {
@@ -30,6 +34,7 @@
   border: 8px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   position: relative;
+  z-index: 10;
 }
 
 .top {

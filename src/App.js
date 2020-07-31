@@ -11,22 +11,14 @@ import CircleLeft from "./CircleLeft";
 import "./App.css";
 
 function App() {
-  let circleLeftOne = {
-    width: `1130px`,
-    height: `1130px`,
+  let circleRightOne = {
+    width: `1020px`,
+    height: `1020px`,
   };
 
-  let innerCircleOne = {
-    backgroundColor: `#0a0b10`,
-  };
-
-  let circleContainerThree = {
-    width: `800px`,
-    height: `800px`,
-  };
-
-  let clircleCenterThree = {
-    backgroundColor: `#f8f9fa`,
+  let circleRightTwo = {
+    width: `820px`,
+    height: `820px`,
   };
 
   return (
@@ -47,22 +39,22 @@ function App() {
         mobileTwo={`middle`}
         mobileThree={`right`}
       />
-      <CircleRight />
+      <CircleRight mainSize={circleRightOne} />
       <Map />
       <div className="DescriptionMobile">
         <DescriptionMobile />
       </div>
-      <CircleLeft main={circleLeftOne} center={innerCircleOne} />
+      <CircleLeft />
       <Paragraph
         header={`Get a head start on your next Journey`}
         paragraph={`Browse a huge collection of Journies that other people have been on. Check out exactly where\nthey visited and use only the parts that you want. You can even share your own.`}
       />
+      <CircleRight mainSize={circleRightTwo} />
       <MobileDisplay
         mobileOne={`venice`}
         mobileTwo={`tokyo`}
         mobileThree={`thailand`}
       />
-      <CircleLeft main={circleContainerThree} center={clircleCenterThree} />
     </div>
   );
 }
