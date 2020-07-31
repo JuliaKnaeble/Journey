@@ -1,13 +1,17 @@
 .description-mobile-first {
+  margin: 0;
   display: flex;
   justify-content: space-between;
+  margin-right: 15.5%;
   margin-left: 15.5%;
 }
 
 .description-mobile-second {
+  margin: 0;
   display: flex;
   justify-content: space-between;
   margin-right: 15.5%;
+  margin-left: 15.5%;
 }
 
 .mobile-start,
@@ -29,14 +33,12 @@
   color: #ffffff;
 }
 .description-indent-first {
-  margin-right: 15.5%;
   margin-top: 268px;
   position: relative;
   z-index: 10;
 }
 
 .description-indent-second {
-  margin-left: 15.5%;
   margin-top: 150px;
   position: relative;
   z-index: 10;
@@ -45,8 +47,6 @@
 .paragraph-first,
 .paragraph-second {
   margin: 0;
-  width: 493.5px;
-  height: 108px;
   font-weight: 500;
   font-size: 1.125rem;
   line-height: 36px;
@@ -74,18 +74,16 @@
   z-index: 10;
 }
 
-@media (min-width: 1550px) {
+@media (min-width: 1300px) {
   .description-mobile-first {
-    margin-left: 25.5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
   }
 
   .description-mobile-second {
-    margin-right: 25.5%;
-  }
-  .description-indent-first {
-    margin-right: 25.5%;
-  }
-  .description-indent-second {
-    margin-left: 25.5%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
   }
 }
