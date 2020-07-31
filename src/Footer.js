@@ -10,7 +10,7 @@ const Footer = () => {
     >
       <div>
         <img
-          src={require(`./Assets/app_logo.png`)}
+          src={require(`./Assets/footer_logo.png`)}
           alt=""
           className="footer-logo"
         />
@@ -20,7 +20,7 @@ const Footer = () => {
       </div>
       <div className="stores">
         <img
-          src={require(`./Assets/applestore.png`)}
+          src={require(`./Assets/googleplay.png`)}
           alt=""
           className="google"
         />

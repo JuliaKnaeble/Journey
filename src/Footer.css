@@ -31,9 +31,10 @@
 }
 
 .footer-image {
-  height: 100%;
-  width: 100%;
+  display: block;
+  margin: 0 auto;
   background-position: center;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-size: cover;
   clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);

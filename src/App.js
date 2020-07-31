@@ -56,7 +56,9 @@ function App() {
         mobileTwo={`tokyo`}
         mobileThree={`thailand`}
       />
-      <Footer />
+      <div className="footer-bg">
+        <Footer />
+      </div>
     </div>
   );
 }
