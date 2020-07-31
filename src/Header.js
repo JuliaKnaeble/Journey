@@ -24,7 +24,7 @@ const Header = () => {
               className="try-arrow"
             />
           </span>
-          <span className="try-now">Try Journey for free</span>
+          <span className="try-now">See more features</span>
         </p>
       </div>
       <div>

@@ -18,9 +18,8 @@
 }
 
 .nav-item {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 0.875rem;
-  color: rgba(255, 255, 255, 1);
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -35,8 +34,7 @@
 .nav-item:hover {
   cursor: pointer;
   color: #ff4e21;
-  text-decoration-color: rgba(255, 255, 255, 0.5);
-  font-weight: 700;
+  text-decoration-color: rgba(255, 255, 255, 0.4);
   text-underline-position: under;
 }
 
@@ -50,11 +48,12 @@ button {
   width: 161px;
   height: 40px;
   border-radius: 20px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 button:hover {
   cursor: pointer;
-  transition: all 300ms ease-in-out;
   background-color: #ffffff;
   border: solid #ffffff;
   color: #ff4e21;

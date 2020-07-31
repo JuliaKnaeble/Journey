@@ -1,22 +1,19 @@
 .description-mobile-first {
   display: flex;
   justify-content: space-between;
-  margin-left: 18.2%;
+  margin-left: 15.5%;
 }
 
 .description-mobile-second {
   display: flex;
   justify-content: space-between;
-  margin-right: 15.1%;
+  margin-right: 15.5%;
 }
 
 .mobile-start,
 .mobile-end {
   width: 321px;
   height: 694px;
-}
-
-.mobile-start {
   z-index: 10;
   position: relative;
 }
@@ -32,12 +29,14 @@
   color: #ffffff;
 }
 .description-indent-first {
-  margin-right: 13.3%;
+  margin-right: 15.5%;
   margin-top: 268px;
+  position: relative;
+  z-index: 10;
 }
 
 .description-indent-second {
-  margin-left: 14.1%;
+  margin-left: 15.5%;
   margin-top: 150px;
   position: relative;
   z-index: 10;
@@ -77,16 +76,16 @@
 
 @media (min-width: 1550px) {
   .description-mobile-first {
-    margin-left: 28.2%;
+    margin-left: 25.5%;
   }
 
   .description-mobile-second {
-    margin-right: 25.1%;
+    margin-right: 25.5%;
   }
   .description-indent-first {
-    margin-right: 23.3%;
+    margin-right: 25.5%;
   }
   .description-indent-second {
-    margin-left: 24.1%;
+    margin-left: 25.5%;
   }
 }
