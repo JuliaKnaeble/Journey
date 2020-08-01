@@ -28,6 +28,7 @@ function App() {
         <Header />
       </div>
       <Paragraph
+        id={"paragraph-one"}
         header={`Multiple ways to view your Journey`}
         paragraph={`Easily navigate between views to get the best idea of how your Journey is laid out.\nView your entire itinerary, dive into a specific day or use the calendar view to make\nsure you have time to do everything you planned.`}
       />
@@ -43,6 +44,7 @@ function App() {
       </div>
       <CircleLeft />
       <Paragraph
+        id={"paragraph-two"}
         header={`Get a head start on your next Journey`}
         paragraph={`Browse a huge collection of Journies that other people have been on. Check out exactly where\nthey visited and use only the parts that you want. You can even share your own.`}
       />

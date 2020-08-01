@@ -3,7 +3,7 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div className="Footer">
+    <div className="Footer" id="footer">
       <div>
         <img
           src={require(`./Assets/footer_logo.png`)}

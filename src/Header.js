@@ -1,12 +1,8 @@
 import React from "react";
 import "./Header.css";
+import { Link } from "react-scroll";
 
 const Header = () => {
-  function handleClick(event) {
-    event.preventDefault();
-    console.log("Ahoi");
-  }
-
   return (
     <div className="Header">
       <div>
@@ -29,9 +25,14 @@ const Header = () => {
               className="try-arrow"
             />
           </span>
-          <span className="try-now">
-            <span onClick={handleClick}>See more features</span>
-          </span>
+          <Link
+            className="try-now"
+            to="paragraph-one"
+            smooth={true}
+            duration={1000}
+          >
+            See more features
+          </Link>
         </p>
       </div>
       <div>

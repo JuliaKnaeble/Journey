@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -18,7 +19,9 @@ const Navbar = () => {
         <p className="nav-item">Home</p>
         <p className="nav-item">News</p>
         <p className="nav-item">API</p>
-        <p className="nav-item">Download</p>
+        <Link className="nav-item" to="footer" smooth={true} duration={1000}>
+          Contact
+        </Link>
       </div>
       <button>Download Now</button>
     </nav>
