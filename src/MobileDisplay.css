@@ -4,6 +4,8 @@
   margin: 0;
   margin-left: 9.4%;
   margin-right: 9.4%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .mobile {

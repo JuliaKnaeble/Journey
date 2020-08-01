@@ -3,7 +3,7 @@ import "./MobileDisplay.css";
 
 const MobileDisplay = (props) => {
   return (
-    <div className="MobileDisplay">
+    <div className="MobileDisplay" style={props.style}>
       <img
         src={require(`./Assets/${props.mobileOne}.png`)}
         alt=""
