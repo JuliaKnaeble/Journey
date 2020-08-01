@@ -2,21 +2,10 @@ import React from "react";
 import "./Header.css";
 
 const Header = () => {
-  //const spans = document.querySelectorAll('.word span');
-
-  //spans.forEach((span, idx) => {
-  // span.addEventListener('click', (e) => {
-  //    e.target.classList.add('active');
-  // });
-  // span.addEventListener('animationend', (e) => {
-  //   e.target.classList.remove('active');
-  //  });
-
-  // Initial animation
-  // setTimeout(() => {
-  //    span.classList.add('active');
-  //  }, 750 * (idx + 1))
-  // });
+  function handleClick(event) {
+    event.preventDefault();
+    console.log("Ahoi");
+  }
 
   return (
     <div className="Header">
@@ -41,7 +30,7 @@ const Header = () => {
             />
           </span>
           <span className="try-now">
-            <span>See</span> <span>more</span> <span>features</span>
+            <span onClick={handleClick}>See more features</span>
           </span>
         </p>
       </div>
