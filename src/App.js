@@ -22,7 +22,7 @@ function App() {
   };
 
   const [opacityOne, setOpacityOne] = useState({ opacity: 0.2 });
-  const [opacityTwo, setOpacityTwo] = useState({ opacity: 0.2 });
+  const [opacityTwo, setOpacityTwo] = useState({ opacity: 0.5 });
 
   function showContentOne() {
     setOpacityOne({ opacity: 1 });
