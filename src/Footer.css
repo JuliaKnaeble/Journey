@@ -21,7 +21,6 @@
 
 .journey-waits {
   margin: 0;
-  padding: 0;
   font-weight: 700;
   line-height: 40px;
   font-size: 1.75rem;
@@ -44,6 +43,20 @@
   background-repeat: no-repeat;
   background-size: cover;
   clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+}
+
+.credits {
+  color: #ffffff;
+  letter-spacing: -0.2px;
+  line-height: 40px;
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding-top: 90px;
+}
+
+a {
+  text-decoration: none;
+  color: #ff4e21;
 }
 
 /*padding-top: 360px;

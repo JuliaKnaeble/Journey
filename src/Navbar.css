@@ -26,16 +26,12 @@
   justify-content: center;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  text-decoration: underline;
-  text-decoration-color: transparent;
-  text-underline-position: under;
 }
 
 .nav-item:hover {
   cursor: pointer;
   color: #ff4e21;
   text-decoration-color: rgba(255, 255, 255, 0.4);
-  text-underline-position: under;
 }
 
 button {
@@ -48,8 +44,8 @@ button {
   width: 161px;
   height: 40px;
   border-radius: 20px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 button:hover {
@@ -69,6 +65,7 @@ button:hover {
 .logo {
   height: 30px;
   width: 30px;
+  margin-top: 5px;
 }
 
 .dot-logo {
