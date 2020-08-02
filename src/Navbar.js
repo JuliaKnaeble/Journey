@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -16,10 +17,19 @@ const Navbar = () => {
           </span>
           <span className="brand-name">Journey</span>
         </p>
-        <p className="nav-item">Home</p>
+        <Link className="nav-item" to="/">
+          Home
+        </Link>
         <p className="nav-item">News</p>
         <p className="nav-item">API</p>
-        <p className="nav-item">Contact</p>
+        <ScrollLink
+          className="nav-item"
+          to="footer"
+          smooth={true}
+          duration={1000}
+        >
+          Contact
+        </ScrollLink>
       </div>
       <Link to="/soon">
         <button>Download Now</button>
