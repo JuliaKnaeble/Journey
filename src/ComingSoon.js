@@ -1,11 +1,9 @@
 import React from "react";
-import Navbar from "./Navbar";
 import "./ComingSoon.css";
 
 const ComingSoon = () => {
   return (
     <div className="ComingSoon">
-      <Navbar />
       <h5 className="soon-text">Coming soon</h5>
       <div className="coming-soon-credits">
         <p className="credits">

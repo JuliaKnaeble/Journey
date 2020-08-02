@@ -1,0 +1,24 @@
+.header-background {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
+  box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.5);
+  background-image: url("https://files.cargocollective.com/c390151/main_bg.jpg");
+  margin-top: -200px;
+}
+
+.DescriptionMobile {
+  background-color: #0a0b10;
+  background-image: linear-gradient(
+      to top left,
+      #0a0b10 50%,
+      #faf8f8 calc(50% + 2px)
+    ),
+    linear-gradient(to bottom right, #0a0b10 50%, #faf8f8 calc(50% + 2px));
+  background-position: 0 0, 100% 100%;
+  background-size: 100% 180px; /* 180px is controling the angle*/
+  background-repeat: no-repeat;
+}

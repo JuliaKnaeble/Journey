@@ -1,79 +1,22 @@
-import React, { useState } from "react";
-import Navbar from "./Navbar";
-import Header from "./Header";
-import Paragraph from "./Paragraph";
-import MobileDisplay from "./MobileDisplay";
-import Map from "./Map";
-import CircleRight from "./CircleRight";
-import DescriptionMobile from "./DescriptionMobile";
-import CircleLeft from "./CircleLeft";
-import Footer from "./Footer";
+import React from "react";
 import "./App.css";
+import MainPage from "./MainPage";
+import ComingSoon from "./ComingSoon";
+import Navbar from "./Navbar";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
-  let circleRightOne = {
-    width: `1020px`,
-    height: `1020px`,
-  };
-
-  let circleRightTwo = {
-    width: `820px`,
-    height: `820px`,
-  };
-
-  const [opacityOne, setOpacityOne] = useState({ opacity: 0.2 });
-  const [opacityTwo, setOpacityTwo] = useState({ opacity: 0.5 });
-
-  function showContentOne() {
-    setOpacityOne({ opacity: 1 });
-  }
-
-  function showContentTwo() {
-    setOpacityTwo({ opacity: 1 });
-  }
-
   return (
     <div className="App">
-      <div className="header-background">
+      <Router>
         <Navbar />
-        <Header />
-      </div>
-      <div onMouseEnter={showContentOne}>
-        <Paragraph
-          id={"paragraph-one"}
-          header={`Multiple ways to view your Journey`}
-          paragraph={`Easily navigate between views to get the best idea of how your Journey is laid out.\nView your entire itinerary, dive into a specific day or use the calendar view to make\nsure you have time to do everything you planned.`}
+        <Route path="/" exact render={(props) => <MainPage {...props} />} />
+        <Route
+          path="/soon"
+          exact
+          render={(props) => <ComingSoon {...props} />}
         />
-        <MobileDisplay
-          style={opacityOne}
-          mobileOne={`left`}
-          mobileTwo={`middle`}
-          mobileThree={`right`}
-        />
-      </div>
-      <CircleRight mainSize={circleRightOne} />
-      <Map />
-      <div className="DescriptionMobile">
-        <DescriptionMobile />
-      </div>
-      <CircleLeft />
-      <div onMouseEnter={showContentTwo}>
-        <Paragraph
-          id={"paragraph-two"}
-          header={`Get a head start on your next Journey`}
-          paragraph={`Browse a huge collection of Journies that other people have been on. Check out exactly where\nthey visited and use only the parts that you want. You can even share your own.`}
-        />
-        <CircleRight mainSize={circleRightTwo} />
-        <MobileDisplay
-          style={opacityTwo}
-          mobileOne={`venice`}
-          mobileTwo={`tokyo`}
-          mobileThree={`thailand`}
-        />
-      </div>
-      <div className="footer-bg">
-        <Footer />
-      </div>
+      </Router>
     </div>
   );
 }
