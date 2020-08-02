@@ -12,7 +12,7 @@
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
   box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.5);
-  background-image: url("./Assets/background.jpg");
+  background-image: url("https://files.cargocollective.com/c390151/main_bg.jpg");
 }
 
 .DescriptionMobile {
