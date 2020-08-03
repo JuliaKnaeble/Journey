@@ -1,26 +1,55 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import "./Navbar.css";
 
 const Navbar = () => {
-  const [activeHome, setActiveHome] = useState({
-    color: "#ff4e21",
-    cursor: "default",
-  });
+  const [activeHome, setActiveHome] = useState({});
+  const [activeNews, setActiveNews] = useState({});
+  const [activeApi, setActiveApi] = useState({});
+  const history = useHistory();
 
   function handleButtonClick() {
     setActiveHome({});
+    setActiveNews({});
+    setActiveApi({});
   }
 
   function handleHomeClick() {
     setActiveHome({ color: "#ff4e21" });
+    setActiveNews({});
+    setActiveApi({});
+  }
+
+  function handleHomeFromLogo() {
+    setActiveHome({ color: "#ff4e21" });
+    setActiveNews({});
+    setActiveApi({});
+  }
+
+  function handleClickNews() {
+    setActiveNews({ color: "#ff4e21" });
+    setActiveHome({});
+    setActiveApi({});
+  }
+
+  function handleClickContact() {
+    history.push("/");
+    setActiveHome({});
+    setActiveNews({});
+    setActiveApi({});
+  }
+
+  function handleClickApi() {
+    setActiveApi({ color: "#ff4e21" });
+    setActiveHome({});
+    setActiveNews({});
   }
 
   return (
     <nav className="Navbar">
       <div className="main-navigation">
-        <Link to="/">
+        <Link to="/" onClick={handleHomeFromLogo}>
           <p className="brand">
             <span>
               <img
@@ -41,10 +70,20 @@ const Navbar = () => {
           {" "}
           Home
         </Link>
-        <Link to="/coming/soon" className="nav-item">
+        <Link
+          to="/coming/soon"
+          className="nav-item"
+          onClick={handleClickNews}
+          style={activeNews}
+        >
           News
         </Link>
-        <Link to="/coming/soon" className="nav-item">
+        <Link
+          to="/coming/soon"
+          className="nav-item"
+          onClick={handleClickApi}
+          style={activeApi}
+        >
           API
         </Link>
         <ScrollLink
@@ -52,6 +91,7 @@ const Navbar = () => {
           to="footer"
           smooth={true}
           duration={1000}
+          onClick={handleClickContact}
         >
           Contact
         </ScrollLink>
