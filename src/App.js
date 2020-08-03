@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import MainPage from "./MainPage";
+import MainPage from "./MainContent/MainPage";
 import ComingSoon from "./ComingSoon";
 import Navbar from "./Navbar";
 import { BrowserRouter as Router, Route } from "react-router-dom";

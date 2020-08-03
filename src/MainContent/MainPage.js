@@ -6,7 +6,7 @@ import Map from "./Map";
 import CircleRight from "./CircleRight";
 import DescriptionMobile from "./DescriptionMobile";
 import CircleLeft from "./CircleLeft";
-import Footer from "./Footer";
+import Footer from "../Footer";
 import "./MainPage.css";
 
 function MainPage() {
