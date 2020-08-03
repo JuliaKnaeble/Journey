@@ -12,7 +12,7 @@ function App() {
         <Navbar />
         <Route path="/" exact render={(props) => <MainPage {...props} />} />
         <Route
-          path="/soon"
+          path="/coming/soon"
           exact
           render={(props) => <ComingSoon {...props} />}
         />

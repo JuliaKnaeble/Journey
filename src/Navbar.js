@@ -10,36 +10,43 @@ const Navbar = () => {
   });
 
   function handleButtonClick() {
-    setActiveHome({ color: "#ffffff" });
+    setActiveHome({});
   }
 
   function handleHomeClick() {
-    setActiveHome({ color: "#ff4e21", cursor: "default" });
+    setActiveHome({ color: "#ff4e21" });
   }
 
   return (
     <nav className="Navbar">
       <div className="main-navigation">
-        <p className="brand">
-          <span>
-            <img
-              src={require(`./Assets/app_logo.png`)}
-              alt=""
-              className="logo"
-            />
-          </span>
-          <span className="brand-name">Journey</span>
-        </p>
+        <Link to="/">
+          <p className="brand">
+            <span>
+              <img
+                src={require(`./Assets/app_logo.png`)}
+                alt=""
+                className="logo"
+              />
+            </span>
+            <span className="brand-name">Journey</span>
+          </p>
+        </Link>
         <Link
-          onClick={handleHomeClick}
-          className="nav-item"
-          style={activeHome}
           to="/"
+          className="nav-item"
+          onClick={handleHomeClick}
+          style={activeHome}
         >
+          {" "}
           Home
         </Link>
-        <p className="nav-item">News</p>
-        <p className="nav-item">API</p>
+        <Link to="/coming/soon" className="nav-item">
+          News
+        </Link>
+        <Link to="/coming/soon" className="nav-item">
+          API
+        </Link>
         <ScrollLink
           className="nav-item"
           to="footer"
@@ -49,7 +56,7 @@ const Navbar = () => {
           Contact
         </ScrollLink>
       </div>
-      <Link to="/soon">
+      <Link to="/coming/soon">
         <button onClick={handleButtonClick}>Download Now</button>
       </Link>
     </nav>
