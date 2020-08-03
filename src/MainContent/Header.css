@@ -49,6 +49,7 @@ h2 {
 .try-arrow {
   height: 24px;
   width: 24px;
+  cursor: pointer;
 }
 
 .hero-image {

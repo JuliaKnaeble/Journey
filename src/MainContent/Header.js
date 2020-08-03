@@ -16,7 +16,7 @@ const Header = () => {
           <br />
           from start to finish.
         </h2>
-        <p className="try">
+        <Link className="try" to="paragraph-one" smooth={true} duration={1000}>
           <span>
             {" "}
             <img
@@ -25,15 +25,10 @@ const Header = () => {
               className="try-arrow"
             />
           </span>
-          <Link
-            className="try-now"
-            to="paragraph-one"
-            smooth={true}
-            duration={1000}
-          >
-            See more features
-          </Link>
-        </p>
+          <span className="try-now">
+            <span>See more features</span>
+          </span>
+        </Link>
       </div>
       <div>
         <img
