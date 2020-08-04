@@ -1,0 +1,41 @@
+.NavbarMobile {
+  display: none;
+}
+
+@media (max-width: 675px) {
+  .NavbarMobile {
+    margin-left: 12%;
+    margin-right: 12%;
+    justify-content: space-between;
+    display: flex;
+    padding-top: 44px;
+    padding-bottom: 42px;
+    height: 40px;
+    position: relative;
+    z-index: 10;
+  }
+  .brand-mobile {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo-mobile {
+    height: 30px;
+    width: 30px;
+    margin-top: 5px;
+    margin-right: 14px;
+  }
+
+  .brand-name-mobile {
+    font-size: 1.5rem;
+    color: #ffffff;
+    line-height: 30px;
+  }
+
+  .burger-mobile {
+    width: 28px;
+    height: 21px;
+    margin-top: 5px;
+  }
+}

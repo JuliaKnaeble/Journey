@@ -75,6 +75,11 @@ h2 {
 }
 
 @media (max-width: 675px) {
+  .Header {
+    margin-left: 12%;
+    margin-right: auto;
+  }
+
   h1 {
     font-size: 2rem;
     line-height: 40px;

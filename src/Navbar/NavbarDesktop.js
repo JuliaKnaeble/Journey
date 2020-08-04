@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
-import "./Navbar.css";
+import "./NavbarDesktop.css";
 
-const Navbar = () => {
+const NavbarDesktop = () => {
   const [activeHome, setActiveHome] = useState({});
   const [activeNews, setActiveNews] = useState({});
   const [activeApi, setActiveApi] = useState({});
@@ -53,7 +53,7 @@ const Navbar = () => {
           <p className="brand">
             <span>
               <img
-                src={require(`./Assets/app_logo.png`)}
+                src={require(`../Assets/app_logo.png`)}
                 alt=""
                 className="logo"
               />
@@ -103,4 +103,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavbarDesktop;

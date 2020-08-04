@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import MainPage from "./MainContent/MainPage";
 import ComingSoon from "./ComingSoon";
-import Navbar from "./Navbar";
+import Navbar from "./Navbar/Navbar";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {

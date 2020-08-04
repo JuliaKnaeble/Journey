@@ -22,3 +22,10 @@
   background-size: 100% 180px; /* 180px is controling the angle*/
   background-repeat: no-repeat;
 }
+
+@media (max-width: 675px) {
+  .header-background {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92%);
+    background-image: url("../Assets/bg_mobile.jpg");
+  }
+}
