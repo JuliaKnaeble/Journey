@@ -98,3 +98,9 @@ button:hover {
     width: 1250px;
   }
 }
+
+@media (max-width: 675px) {
+  .Navbar {
+    display: none;
+  }
+}

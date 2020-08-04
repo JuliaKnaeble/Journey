@@ -24,3 +24,9 @@
   position: relative;
   left: 36%;
 }
+
+@media (max-width: 675px) {
+  .circle-container {
+    display: none;
+  }
+}

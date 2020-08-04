@@ -42,6 +42,7 @@ h2 {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+
 .try-now:hover {
   color: rgba(248, 249, 250, 0.6);
 }
@@ -70,5 +71,37 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     width: 1250px;
+  }
+}
+
+@media (max-width: 675px) {
+  h1 {
+    font-size: 2rem;
+    line-height: 40px;
+    height: 120px;
+    width: 300px;
+    margin-top: 15px;
+    margin-bottom: 56px;
+  }
+
+  h2 {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 24px;
+    height: 48px;
+    width: 303px;
+    margin-bottom: 42px;
+  }
+  .hero-image {
+    display: none;
+  }
+
+  .try {
+    display: flex;
+    margin-bottom: 320px;
+  }
+
+  .try-now {
+    font-size: 1rem;
   }
 }

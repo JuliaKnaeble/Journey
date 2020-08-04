@@ -48,3 +48,29 @@
     width: 1000px;
   }
 }
+
+@media (max-width: 675px) {
+  .Map {
+    flex-direction: column;
+  }
+
+  .header-map {
+    font-size: 1.5rem;
+    line-height: 34px;
+  }
+
+  .image-map {
+    width: 270px;
+    height: 144px;
+  }
+
+  .text-map {
+    font-size: 1rem;
+    line-height: 26px;
+    padding-bottom: 48px;
+  }
+
+  .dot-map {
+    display: none;
+  }
+}

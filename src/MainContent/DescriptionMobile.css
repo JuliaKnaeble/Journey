@@ -1,11 +1,4 @@
-.description-mobile-first {
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-  margin-right: 15.5%;
-  margin-left: 15.5%;
-}
-
+.description-mobile-first,
 .description-mobile-second {
   margin: 0;
   display: flex;
@@ -85,5 +78,37 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 1000px;
+  }
+}
+
+@media (max-width: 675px) {
+  .description-mobile-first,
+  .description-mobile-second {
+    flex-direction: column;
+  }
+
+  .mobile-start,
+  .mobile-end {
+    width: 193px;
+    height: 417px;
+  }
+
+  .header-first,
+  .header-second {
+    width: 319px;
+    height: 102px;
+    font-size: 1.5rem;
+    line-height: 34px;
+  }
+
+  .paragraph-first,
+  .paragraph-second {
+    font-size: 1rem;
+    line-height: 26px;
+  }
+
+  .dot-description-mobile-first,
+  .dot-description-mobile-second {
+    display: none;
   }
 }
