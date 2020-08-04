@@ -86,6 +86,7 @@ a:hover {
     margin-right: 20px;
   }
   .credits {
-    margin: 0;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
   }
 }
