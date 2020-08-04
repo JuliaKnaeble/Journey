@@ -85,16 +85,29 @@
   .description-mobile-first,
   .description-mobile-second {
     flex-direction: column;
+    margin-right: 7.5%;
+    margin-left: 7.5%;
+    justify-content: center;
   }
 
   .description-mobile-first {
     flex-direction: column-reverse;
   }
 
+  .description-indent-first {
+    margin-top: 90px;
+  }
+
+  .description-indent-second {
+    margin-top: 50px;
+  }
+
   .mobile-start,
   .mobile-end {
     width: 193px;
     height: 417px;
+    display: block;
+    margin: 0 auto;
   }
 
   .header-first,
@@ -109,6 +122,14 @@
   .paragraph-second {
     font-size: 1rem;
     line-height: 26px;
+  }
+
+  .paragraph-first {
+    margin-bottom: 47px;
+  }
+  .paragraph-second {
+    margin-bottom: 25px;
+    margin-top: 10px;
   }
 
   .dot-description-mobile-first,

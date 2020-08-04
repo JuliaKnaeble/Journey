@@ -44,7 +44,6 @@
   .mobile {
     width: 193px;
     height: 418px;
-    justify-content: center;
     -webkit-overflow-scrolling: touch;
   }
   .side,
