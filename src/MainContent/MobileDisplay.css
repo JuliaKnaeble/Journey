@@ -37,10 +37,18 @@
 }
 
 @media (max-width: 675px) {
+  .MobileDisplay {
+    margin: 0;
+    justify-content: center;
+  }
   .mobile {
     width: 193px;
     height: 418px;
     justify-content: center;
     -webkit-overflow-scrolling: touch;
+  }
+  .side,
+  .middle {
+    margin-top: 49px;
   }
 }

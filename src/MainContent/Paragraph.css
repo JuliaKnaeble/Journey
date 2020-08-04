@@ -48,16 +48,17 @@
 }
 
 @media (max-width: 675px) {
+  .Paragraph {
+    margin-right: 12%;
+    margin-left: 12%;
+  }
   .header-paragraph {
     font-size: 1.5rem;
     line-height: 34px;
-    width: 319px;
-    height: 68px;
+    padding-top: 51px;
   }
 
   .text-paragraph {
-    width: 319px;
-    height: 156px;
     font-size: 1rem;
     line-height: 26px;
   }

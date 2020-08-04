@@ -87,6 +87,10 @@
     flex-direction: column;
   }
 
+  .description-mobile-first {
+    flex-direction: column-reverse;
+  }
+
   .mobile-start,
   .mobile-end {
     width: 193px;

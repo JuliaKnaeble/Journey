@@ -52,6 +52,10 @@
 @media (max-width: 675px) {
   .Map {
     flex-direction: column;
+    margin-top: 88px;
+    text-align: center;
+    margin-left: 12%;
+    margin-right: 12%;
   }
 
   .header-map {

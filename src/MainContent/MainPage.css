@@ -27,5 +27,11 @@
   .header-background {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92%);
     background-image: url("../Assets/bg_mobile.jpg");
+    height: 666px;
+    width: auto;
+  }
+
+  .DescriptionMobile {
+    background-size: 100% 50px;
   }
 }
