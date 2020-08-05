@@ -20,6 +20,7 @@
     align-items: center;
     justify-content: center;
   }
+
   .logo-mobile {
     height: 30px;
     width: 30px;
@@ -37,5 +38,32 @@
     width: 32px;
     height: 31px;
     margin-top: 5px;
+    position: fixed;
+    left: 85%;
   }
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  width: 100vh;
+  height: 100vh;
+}
+.menu-logo {
+  width: 30px;
+  height: 30px;
+}
+
+.mobile-menu-items {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 23px;
+}
+
+.mobile-menu-items:hover {
+  color: #ff4e21;
 }
