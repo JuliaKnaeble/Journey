@@ -4,6 +4,9 @@ import "./NavbarMobile.css";
 const NavbarMobile = () => {
   const [clicked, setClicked] = useState(false);
 
+  let logo;
+  let menuBg;
+  let xButton;
   let menu;
   if (clicked) {
     menu = (
@@ -13,12 +16,24 @@ const NavbarMobile = () => {
           alt=""
           className="mobile-menu-items menu-logo"
         />
-        <div className="mobile-menu-items">Home</div>
+        <div className="mobile-menu-items menu-item">Home</div>
         <div className="mobile-menu-items">News</div>
         <div className="mobile-menu-items">Api</div>
         <div className="mobile-menu-items">Contact</div>
       </div>
     );
+
+    xButton = { position: "fixed", left: "85%" };
+
+    menuBg = {
+      position: "fixed",
+      backgroundColor: "black",
+      top: 0,
+      height: "100vh",
+      zIndex: 50,
+    };
+
+    logo = { display: "none" };
   }
 
   function handleClick() {
@@ -27,8 +42,8 @@ const NavbarMobile = () => {
 
   return (
     <div>
-      <div className="NavbarMobile">
-        <p className="brand-mobile">
+      <div className="NavbarMobile" style={menuBg}>
+        <p className="brand-mobile" style={logo}>
           <span>
             <img
               src={require(`../Assets/app_logo.png`)}
@@ -46,6 +61,7 @@ const NavbarMobile = () => {
           }
           alt=""
           className="burger-mobile"
+          style={xButton}
           onClick={handleClick}
         />
         {menu}
