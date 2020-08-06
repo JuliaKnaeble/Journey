@@ -6,15 +6,10 @@ const Header = () => {
   return (
     <div className="Header">
       <div>
-        <h1>
-          Planning a journey
-          <br />
-          has never been easier.
-        </h1>
+        <h1>Planning a journey has never been easier.</h1>
         <h2>
-          Collaborate with friends and plan your next journey
-          <br />
-          from start to finish.
+          Collaborate with friends and plan your next journey from start to
+          finish.
         </h2>
         <Link className="try" to="paragraph-one" smooth={true} duration={1000}>
           <span>

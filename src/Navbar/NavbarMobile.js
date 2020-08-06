@@ -27,6 +27,7 @@ const NavbarMobile = () => {
           src={require(`../Assets/app_logo.png`)}
           alt=""
           className="mobile-menu-items menu-logo"
+          onClick={handleHome}
         />
         <div className="mobile-menu-items menu-item" onClick={handleHome}>
           Home

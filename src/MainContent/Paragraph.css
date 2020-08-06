@@ -18,11 +18,12 @@
 
 .text-paragraph {
   margin: 0;
+  padding-right: 28%;
+  padding-left: 28%;
   color: #2a2a2a;
   font-weight: 500;
   font-size: 1.125rem;
   line-height: 36px;
-  white-space: pre-wrap;
   position: relative;
   z-index: 10;
 }
@@ -47,6 +48,13 @@
   top: 60px;
 }
 
+@media (min-width: 1300px) {
+  .text-paragraph {
+    padding-right: 32%;
+    padding-left: 32%;
+  }
+}
+
 @media (max-width: 675px) {
   .Paragraph {
     margin-right: 7.5%;
@@ -61,6 +69,7 @@
   .text-paragraph {
     font-size: 1rem;
     line-height: 26px;
+    padding: 0;
   }
 
   .dot-paragraph {

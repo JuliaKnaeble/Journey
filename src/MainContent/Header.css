@@ -85,8 +85,8 @@ h2 {
     line-height: 40px;
     height: 120px;
     width: 300px;
-    margin-top: 15px;
-    margin-bottom: 56px;
+    margin-top: 25px;
+    margin-bottom: 16px;
   }
 
   h2 {
@@ -94,8 +94,8 @@ h2 {
     font-size: 1rem;
     line-height: 24px;
     height: 48px;
-    width: 303px;
-    margin-bottom: 42px;
+    width: 304px;
+    margin-bottom: 23px;
   }
   .hero-image {
     display: none;

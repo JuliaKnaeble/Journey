@@ -23,6 +23,7 @@
 .text-map {
   margin: 0;
   padding-top: 33px;
+  padding-right: 70px;
   color: #2a2a2a;
   font-weight: 500;
   font-size: 1.125rem;
@@ -66,12 +67,14 @@
   .image-map {
     width: 270px;
     height: 144px;
+    padding-bottom: 45px;
   }
 
   .text-map {
     font-size: 1rem;
     line-height: 26px;
-    padding-bottom: 48px;
+    padding-bottom: 35px;
+    padding-right: 0;
   }
 
   .dot-map {
