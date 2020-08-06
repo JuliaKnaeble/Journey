@@ -89,8 +89,8 @@
     flex-direction: column;
     margin-right: 7.5%;
     margin-left: 7.5%;
-    justify-content: center;
     text-align: center;
+    padding: 0;
   }
 
   .description-mobile-first {
