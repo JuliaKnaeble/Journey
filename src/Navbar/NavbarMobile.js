@@ -6,16 +6,6 @@ const NavbarMobile = () => {
   const [clicked, setClicked] = useState(false);
   const history = useHistory();
 
-  function handleButton() {
-    setClicked(!clicked);
-    history.push("/coming/soon");
-  }
-
-  function handleHome() {
-    setClicked(!clicked);
-    history.push("/");
-  }
-
   let logo;
   let menuBg;
   let xButton;
@@ -27,15 +17,21 @@ const NavbarMobile = () => {
           src={require(`../Assets/app_logo.png`)}
           alt=""
           className="mobile-menu-items menu-logo"
-          onClick={handleHome}
+          onClick={() => setClicked(!clicked) & history.push("/")}
         />
-        <div className="mobile-menu-items menu-item" onClick={handleHome}>
+        <div
+          className="mobile-menu-items menu-item"
+          onClick={() => setClicked(!clicked) & history.push("/")}
+        >
           Home
         </div>
         <div className="mobile-menu-items">News</div>
         <div className="mobile-menu-items">Api</div>
         <div className="mobile-menu-items">Contact</div>
-        <button className="mobile-button" onClick={handleButton}>
+        <button
+          className="mobile-button"
+          onClick={() => setClicked(!clicked) & history.push("/coming/soon")}
+        >
           Download Now
         </button>
       </div>
@@ -54,10 +50,6 @@ const NavbarMobile = () => {
     };
 
     logo = { display: "none" };
-  }
-
-  function handleClick() {
-    setClicked(!clicked);
   }
 
   return (
@@ -82,7 +74,7 @@ const NavbarMobile = () => {
           alt=""
           className="burger-mobile"
           style={xButton}
-          onClick={handleClick}
+          onClick={() => setClicked(!clicked)}
         />
         {menu}
       </div>

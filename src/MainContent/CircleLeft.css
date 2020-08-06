@@ -29,17 +29,17 @@
 
 @media (max-width: 675px) {
   .circle-container-three {
-    width: 580px;
+    width: 360px;
     height: 580px;
   }
 
   .circle-three {
-    clip-path: circle(49.3% at 10% 50%);
+    clip-path: circle(53.7% at 17% 49%);
     bottom: 235%;
   }
 
   .clircle-center-three {
-    clip-path: circle(40% at 10% 50%);
+    clip-path: circle(53.7% at 17% 49%);
     bottom: 315%;
     left: 0;
   }
