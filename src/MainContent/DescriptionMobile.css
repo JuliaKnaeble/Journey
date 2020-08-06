@@ -18,8 +18,6 @@
 .header-first,
 .header-second {
   margin: 0;
-  width: 483px;
-  height: 80px;
   font-weight: 700;
   font-size: 1.75rem;
   line-height: 40px;
@@ -90,7 +88,6 @@
     margin-right: 7.5%;
     margin-left: 7.5%;
     text-align: center;
-    padding: 0;
   }
 
   .description-mobile-first {
@@ -122,8 +119,6 @@
 
   .header-first,
   .header-second {
-    width: 319px;
-    height: 102px;
     font-size: 1.5rem;
     line-height: 34px;
   }
