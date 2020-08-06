@@ -45,20 +45,33 @@
   color: #ffffff;
   width: 100vh;
   height: 100vh;
-}
-
-.mobile-menu-items {
-  display: flex;
   font-size: 1.2rem;
   font-weight: 700;
   line-height: 23px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.mobile-menu-items {
+  padding-top: 25px;
+  width: 80px;
+  height: 30px;
+  margin-left: 21%;
 }
 
 .menu-logo {
+  padding-top: 120px;
   width: 30px;
   height: 30px;
+  margin-left: 25%;
 }
 
 .mobile-menu-items:hover {
   color: #ff4e21;
+}
+
+.mobile-button {
+  margin-top: 95px;
+  margin-left: 15%;
 }

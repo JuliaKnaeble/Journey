@@ -20,6 +20,7 @@ const NavbarMobile = () => {
         <div className="mobile-menu-items">News</div>
         <div className="mobile-menu-items">Api</div>
         <div className="mobile-menu-items">Contact</div>
+        <button className="mobile-button">Download Now</button>
       </div>
     );
 
@@ -27,7 +28,7 @@ const NavbarMobile = () => {
 
     menuBg = {
       position: "fixed",
-      backgroundColor: "black",
+      backgroundColor: "rgba(0,0,0,0.95)",
       top: 0,
       height: "100vh",
       zIndex: 50,
