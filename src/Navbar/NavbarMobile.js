@@ -1,8 +1,20 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import "./NavbarMobile.css";
 
 const NavbarMobile = () => {
   const [clicked, setClicked] = useState(false);
+  const history = useHistory();
+
+  function handleButton() {
+    setClicked(!clicked);
+    history.push("/coming/soon");
+  }
+
+  function handleHome() {
+    setClicked(!clicked);
+    history.push("/");
+  }
 
   let logo;
   let menuBg;
@@ -16,11 +28,15 @@ const NavbarMobile = () => {
           alt=""
           className="mobile-menu-items menu-logo"
         />
-        <div className="mobile-menu-items menu-item">Home</div>
+        <div className="mobile-menu-items menu-item" onClick={handleHome}>
+          Home
+        </div>
         <div className="mobile-menu-items">News</div>
         <div className="mobile-menu-items">Api</div>
         <div className="mobile-menu-items">Contact</div>
-        <button className="mobile-button">Download Now</button>
+        <button className="mobile-button" onClick={handleButton}>
+          Download Now
+        </button>
       </div>
     );
 
