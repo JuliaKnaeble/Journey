@@ -24,14 +24,16 @@ const NavbarMobile = () => {
       </div>
     );
 
-    xButton = { position: "fixed", left: "85%" };
+    xButton = { position: "fixed", left: "45%" };
 
     menuBg = {
+      backdropFilter: "blur(5px)",
       position: "fixed",
-      backgroundColor: "rgba(0,0,0,0.95)",
+      backgroundColor: "rgba(0,0,0,0.6)",
       top: 0,
       height: "100vh",
-      zIndex: 50,
+      width: "100vh",
+      zIndex: 20,
     };
 
     logo = { display: "none" };
