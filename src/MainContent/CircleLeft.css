@@ -29,6 +29,18 @@
 
 @media (max-width: 675px) {
   .circle-container-three {
-    display: none;
+    width: 580px;
+    height: 580px;
+  }
+
+  .circle-three {
+    clip-path: circle(49.3% at 10% 50%);
+    bottom: 235%;
+  }
+
+  .clircle-center-three {
+    clip-path: circle(40% at 10% 50%);
+    bottom: 315%;
+    left: 0;
   }
 }
