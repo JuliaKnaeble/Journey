@@ -44,8 +44,6 @@
 
 .mobile-menu {
   color: #ffffff;
-  width: 100vh;
-  height: 100vh;
   font-size: 1.2rem;
   font-weight: 700;
   line-height: 23px;
@@ -55,17 +53,15 @@
 }
 
 .mobile-menu-items {
-  padding-top: 25px;
-  width: 80px;
-  height: 30px;
-  margin-left: 21%;
+  padding-top: 30px;
 }
 
 .menu-logo {
-  padding-top: 120px;
+  padding-top: 170px;
   width: 30px;
   height: 30px;
-  margin-left: 25%;
+  display: block;
+  margin: 0 auto;
 }
 
 .mobile-menu-items:hover {
@@ -73,6 +69,6 @@
 }
 
 .mobile-button {
-  margin-top: 95px;
-  margin-left: 16%;
+  display: block;
+  margin: 153px auto 0;
 }

@@ -10,11 +10,12 @@ const NavbarMobile = () => {
   menuBg = {
     backdropFilter: "blur(5px)",
     position: "fixed",
-    backgroundColor: "rgba(0,0,0,0.6)",
+    backgroundColor: "rgba(0,0,0,0.8)",
     top: 0,
-    height: "100vh",
-    width: "100vh",
+    height: "100%",
+    width: "100%",
     zIndex: 10,
+    overflow: "auto",
   };
 
   let menu;
@@ -24,11 +25,11 @@ const NavbarMobile = () => {
         <img
           src={require(`../Assets/app_logo.png`)}
           alt=""
-          className="mobile-menu-items menu-logo"
+          className="menu-logo"
           onClick={() => setClicked(!clicked) & history.push("/")}
         />
         <div
-          className="mobile-menu-items menu-item"
+          className="mobile-menu-items"
           onClick={() => setClicked(!clicked) & history.push("/")}
         >
           Home
