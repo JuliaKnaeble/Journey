@@ -6,13 +6,21 @@ const NavbarMobile = () => {
   const [clicked, setClicked] = useState(false);
   const history = useHistory();
 
-  let logo;
   let menuBg;
-  let xButton;
+  menuBg = {
+    backdropFilter: "blur(5px)",
+    position: "fixed",
+    backgroundColor: "rgba(0,0,0,0.6)",
+    top: 0,
+    height: "100vh",
+    width: "100vh",
+    zIndex: 10,
+  };
+
   let menu;
   if (clicked) {
     menu = (
-      <div className="mobile-menu">
+      <div className="mobile-menu" style={menuBg}>
         <img
           src={require(`../Assets/app_logo.png`)}
           alt=""
@@ -36,26 +44,12 @@ const NavbarMobile = () => {
         </button>
       </div>
     );
-
-    xButton = { position: "fixed", left: "45%" };
-
-    menuBg = {
-      backdropFilter: "blur(5px)",
-      position: "fixed",
-      backgroundColor: "rgba(0,0,0,0.6)",
-      top: 0,
-      height: "100vh",
-      width: "100vh",
-      zIndex: 20,
-    };
-
-    logo = { display: "none" };
   }
 
   return (
     <div>
-      <div className="NavbarMobile" style={menuBg}>
-        <p className="brand-mobile" style={logo}>
+      <div className="NavbarMobile">
+        <p className="brand-mobile">
           <span>
             <img
               src={require(`../Assets/app_logo.png`)}
@@ -73,7 +67,6 @@ const NavbarMobile = () => {
           }
           alt=""
           className="burger-mobile"
-          style={xButton}
           onClick={() => setClicked(!clicked)}
         />
         {menu}
