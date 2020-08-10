@@ -3,27 +3,40 @@ import "./MobileDisplay.css";
 
 const MobileDisplay = (props) => {
   return (
-    <div className="MobileDisplay" style={props.style}>
-      <div className="carousel-item">
-        <img
-          src={require(`../Assets/${props.mobileOne}.png`)}
-          alt=""
-          className="mobile side side-left"
-        />
+    <div>
+      <div className="MobileDisplay" style={props.style}>
+        <div id={props.mobileOne} className="carousel-item">
+          <img
+            src={require(`../Assets/${props.mobileOne}.png`)}
+            alt=""
+            className="mobile side side-left"
+          />
+        </div>
+        <div id={props.mobileTwo} className="carousel-item">
+          <img
+            src={require(`../Assets/${props.mobileTwo}.png`)}
+            alt=""
+            className="mobile middle"
+          />
+        </div>
+        <div id={props.mobileThree} className="carousel-item">
+          <img
+            src={require(`../Assets/${props.mobileThree}.png`)}
+            alt=""
+            className="mobile side side-right"
+          />
+        </div>
       </div>
-      <div className="carousel-item">
-        <img
-          src={require(`../Assets/${props.mobileTwo}.png`)}
-          alt=""
-          className="mobile middle"
-        />
-      </div>
-      <div className="carousel-item">
-        <img
-          src={require(`../Assets/${props.mobileThree}.png`)}
-          alt=""
-          className="mobile side side-right"
-        />
+      <div className="controls">
+        <a href={`#${props.mobileOne}`} class="controls-dot">
+          <span class="visuallyhidden"></span>
+        </a>
+        <a href={`#${props.mobileTwo}`} class="controls-dot">
+          <span class="visuallyhidden"></span>
+        </a>
+        <a href={`#${props.mobileThree}`} class="controls-dot">
+          <span class="visuallyhidden"></span>
+        </a>
       </div>
     </div>
   );

@@ -4,10 +4,6 @@
   margin: 0;
   margin-left: 9.4%;
   margin-right: 9.4%;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  flex-wrap: nowrap;
-  overflow-x: auto;
 }
 
 .MobileDisplay::-webkit-scrollbar {
@@ -17,7 +13,8 @@
 .mobile {
   width: 349px;
   height: 704px;
-  z-index: 10;
+  z-index: 12;
+  position: relative;
 }
 
 .side {
@@ -26,6 +23,10 @@
 
 .middle {
   margin-top: 89px;
+}
+
+.controls {
+  display: none;
 }
 
 @media (min-width: 1300px) {
@@ -56,12 +57,41 @@
     width: 193px;
     height: 418px;
   }
+
   .side,
   .middle {
     margin-top: 49px;
   }
+
   .middle {
     padding-left: 10px;
     padding-right: 10px;
+  }
+
+  .controls {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  .controls-dot {
+    display: inline-block;
+    width: 0.85em;
+    height: 0.85em;
+    border-radius: 50%;
+    outline: none;
+    background-color: #2a2a2a;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+
+  .controls-dot:not(:first-child) {
+    margin-left: 0.35em;
+  }
+
+  .controls-dot:hover,
+  .controls-dot:focus {
+    opacity: 1;
   }
 }
