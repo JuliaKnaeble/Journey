@@ -15,7 +15,6 @@ const NavbarMobile = () => {
     height: "100%",
     width: "100%",
     zIndex: 10,
-    overflow: "auto",
   };
 
   let menu;

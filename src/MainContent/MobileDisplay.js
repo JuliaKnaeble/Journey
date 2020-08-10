@@ -7,7 +7,7 @@ const MobileDisplay = (props) => {
       <img
         src={require(`../Assets/${props.mobileOne}.png`)}
         alt=""
-        className="mobile side"
+        className="mobile side side-left"
       />
       <img
         src={require(`../Assets/${props.mobileTwo}.png`)}
@@ -17,7 +17,7 @@ const MobileDisplay = (props) => {
       <img
         src={require(`../Assets/${props.mobileThree}.png`)}
         alt=""
-        className="mobile side"
+        className="mobile side side-right"
       />
     </div>
   );

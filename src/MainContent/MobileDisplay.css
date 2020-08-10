@@ -39,15 +39,29 @@
 @media (max-width: 675px) {
   .MobileDisplay {
     margin: 0;
-    justify-content: center;
+    overflow: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
   }
+
   .mobile {
     width: 193px;
     height: 418px;
-    -webkit-overflow-scrolling: touch;
   }
   .side,
   .middle {
     margin-top: 49px;
+  }
+  .middle {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .side-left {
+    padding-left: 25%;
+  }
+
+  .side-right {
+    padding-right: 25%;
   }
 }
