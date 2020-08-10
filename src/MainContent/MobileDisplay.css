@@ -38,13 +38,21 @@
 
 @media (max-width: 675px) {
   .MobileDisplay {
-    margin: 0;
-    overflow: auto;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
     scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
+  }
+
+  .carousel-item {
+    width: 100%;
+    flex-shrink: 0;
+    scroll-snap-align: start;
   }
 
   .mobile {
+    display: block;
+    margin: 0 auto;
     width: 193px;
     height: 418px;
   }
@@ -55,13 +63,5 @@
   .middle {
     padding-left: 10px;
     padding-right: 10px;
-  }
-
-  .side-left {
-    padding-left: 25%;
-  }
-
-  .side-right {
-    padding-right: 25%;
   }
 }
