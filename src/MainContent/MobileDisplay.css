@@ -54,8 +54,8 @@
   .mobile {
     display: block;
     margin: 0 auto;
-    width: 193px;
-    height: 418px;
+    width: 213px;
+    height: 438px;
   }
 
   .side,
@@ -87,7 +87,7 @@
   }
 
   .controls-dot:not(:first-child) {
-    margin-left: 0.35em;
+    margin-left: 0.65em;
   }
 
   .controls-dot:hover,
