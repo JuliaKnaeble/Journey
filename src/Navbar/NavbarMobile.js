@@ -5,22 +5,13 @@ import "./NavbarMobile.css";
 const NavbarMobile = () => {
   const [clicked, setClicked] = useState(false);
   const history = useHistory();
-
-  let menuBg;
-  menuBg = {
-    backdropFilter: "blur(5px)",
-    position: "fixed",
-    backgroundColor: "rgba(0,0,0,0.8)",
-    top: 0,
-    height: "100%",
-    width: "100%",
-    zIndex: 10,
-  };
+  document.body.style.overflow = "visible";
 
   let menu;
   if (clicked) {
+    document.body.style.overflow = "hidden";
     menu = (
-      <div className="mobile-menu" style={menuBg}>
+      <div className="mobile-menu">
         <img
           src={require(`../Assets/app_logo.png`)}
           alt=""

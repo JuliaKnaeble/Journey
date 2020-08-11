@@ -38,7 +38,7 @@
     height: 31px;
     margin-top: 5px;
     margin-right: 7.5%;
-    z-index: 12;
+    z-index: 14;
   }
 }
 
@@ -50,6 +50,14 @@
   display: flex;
   text-align: center;
   flex-direction: column;
+  backdrop-filter: blur(5px);
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 13;
+  overflow-y: scroll;
 }
 
 .mobile-menu-items {

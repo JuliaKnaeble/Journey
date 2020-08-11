@@ -28,14 +28,14 @@ const MobileDisplay = (props) => {
         </div>
       </div>
       <div className="controls">
-        <a href={`#${props.mobileOne}`} class="controls-dot">
-          <span class="visuallyhidden"></span>
+        <a href={`#${props.mobileOne}`} className="controls-dot">
+          <span className="visuallyhidden"></span>
         </a>
-        <a href={`#${props.mobileTwo}`} class="controls-dot">
-          <span class="visuallyhidden"></span>
+        <a href={`#${props.mobileTwo}`} className="controls-dot">
+          <span className="visuallyhidden"></span>
         </a>
-        <a href={`#${props.mobileThree}`} class="controls-dot">
-          <span class="visuallyhidden"></span>
+        <a href={`#${props.mobileThree}`} className="controls-dot">
+          <span className="visuallyhidden"></span>
         </a>
       </div>
     </div>
