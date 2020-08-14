@@ -1,14 +1,18 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import { is_clicked } from "../Actions";
 import "./NavbarMobile.css";
 
 const NavbarMobile = () => {
-  const [clicked, setClicked] = useState(false);
+  const isClicked = useSelector((state) => state.isClicked);
+  const dispatch = useDispatch();
+
   const history = useHistory();
   document.body.style.overflow = "visible";
 
   let menu;
-  if (clicked) {
+  if (isClicked) {
     document.body.style.overflow = "hidden";
     menu = (
       <div className="mobile-menu">
@@ -16,11 +20,11 @@ const NavbarMobile = () => {
           src={require(`../Assets/app_logo.png`)}
           alt=""
           className="menu-logo"
-          onClick={() => setClicked(!clicked) & history.push("/")}
+          onClick={() => dispatch(is_clicked()) & history.push("/")}
         />
         <div
           className="mobile-menu-items"
-          onClick={() => setClicked(!clicked) & history.push("/")}
+          onClick={() => dispatch(is_clicked()) & history.push("/")}
         >
           Home
         </div>
@@ -29,7 +33,7 @@ const NavbarMobile = () => {
         <div className="mobile-menu-items">Contact</div>
         <button
           className="mobile-button"
-          onClick={() => setClicked(!clicked) & history.push("/coming/soon")}
+          onClick={() => dispatch(is_clicked()) & history.push("/coming/soon")}
         >
           Download Now
         </button>
@@ -52,13 +56,13 @@ const NavbarMobile = () => {
         </p>
         <img
           src={
-            clicked
+            isClicked
               ? require(`../Assets/close_x.png`)
               : require(`../Assets/hamburger.png`)
           }
           alt=""
           className="burger-mobile"
-          onClick={() => setClicked(!clicked)}
+          onClick={() => dispatch(is_clicked())}
         />
         {menu}
       </div>
