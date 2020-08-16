@@ -1,5 +1,5 @@
 import React from "react";
-import "./MobileDisplay.css";
+import "./MobileDisplay.scss";
 
 const MobileDisplay = (props) => {
   return (
@@ -9,7 +9,7 @@ const MobileDisplay = (props) => {
           <img
             src={require(`../Assets/${props.mobileOne}.png`)}
             alt=""
-            className="mobile side side-left"
+            className="mobile side"
           />
         </div>
         <div id={props.mobileTwo} className="carousel-item">
@@ -23,19 +23,19 @@ const MobileDisplay = (props) => {
           <img
             src={require(`../Assets/${props.mobileThree}.png`)}
             alt=""
-            className="mobile side side-right"
+            className="mobile side"
           />
         </div>
       </div>
       <div className="controls">
         <a href={`#${props.mobileOne}`} className="controls-dot">
-          <span className="visuallyhidden"></span>
+          <span></span>
         </a>
         <a href={`#${props.mobileTwo}`} className="controls-dot">
-          <span className="visuallyhidden"></span>
+          <span></span>
         </a>
         <a href={`#${props.mobileThree}`} className="controls-dot">
-          <span className="visuallyhidden"></span>
+          <span></span>
         </a>
       </div>
     </div>
