@@ -1,0 +1,99 @@
+@import "../SassVariables";
+
+.Header {
+  padding-top: 200px;
+  margin-left: 10.7%;
+  margin-right: 10.7%;
+  @include flexCenter(space-between);
+
+  @media (min-width: 1100px) {
+    @include marginDesktop;
+    width: 1100px;
+  }
+
+  @media (min-width: 1800px) {
+    @include marginDesktop;
+    width: 1250px;
+  }
+
+  @media (max-width: 675px) {
+    @include marginMobile;
+  }
+}
+
+h1 {
+  font-weight: $fontWeightPrimary;
+  font-size: 3rem;
+  line-height: 61px;
+  height: 122px;
+  width: 594px;
+  margin-top: 105px;
+  margin-bottom: 0;
+  color: $fontColorOnDarkBg;
+
+  @media (max-width: 675px) {
+    font-size: 2rem;
+    line-height: 40px;
+    height: 120px;
+    width: 300px;
+    margin-top: 25px;
+    margin-bottom: 16px;
+  }
+}
+
+h2 {
+  font-weight: $fontWeightSecondary;
+  font-size: 1.12rem;
+  line-height: 28px;
+  height: 56px;
+  width: 500px;
+  margin-bottom: 32px;
+  color: $fontColorOnDarkBg;
+
+  @media (max-width: 675px) {
+    font-size: 1rem;
+    line-height: 24px;
+    height: 48px;
+    width: 304px;
+    margin-bottom: 23px;
+  }
+}
+
+.try {
+  display: flex;
+  margin-bottom: 320px;
+}
+
+.try-now {
+  font-weight: $fontWeightPrimary;
+  margin-left: 10px;
+  font-size: 1.12rem;
+  height: 28px;
+  color: $appBgColor;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+
+  &:hover {
+    color: rgba(248, 249, 250, 0.6);
+  }
+
+  @media (max-width: 675px) {
+    font-size: 1rem;
+  }
+}
+
+.try-arrow {
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+}
+
+.hero-image {
+  width: 394px;
+  height: 512px;
+
+  @media (max-width: 675px) {
+    display: none;
+  }
+}

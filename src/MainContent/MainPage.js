@@ -7,7 +7,7 @@ import CircleRight from "./CircleRight";
 import DescriptionMobile from "./DescriptionMobile";
 import CircleLeft from "./CircleLeft";
 import Footer from "../Footer";
-import "./MainPage.css";
+import "./MainPage.scss";
 
 function MainPage() {
   let circleRightOne = {

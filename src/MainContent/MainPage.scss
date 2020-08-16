@@ -1,0 +1,42 @@
+@import "../SassVariables";
+
+.header-background {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86%);
+  box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.5);
+  background-image: url("https://files.cargocollective.com/c390151/main_bg.jpg");
+  margin-top: -200px;
+
+  @media (max-width: 675px) {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 92%);
+    background-image: url("../Assets/bg_mobile.jpg");
+    height: 666px;
+    width: auto;
+  }
+}
+
+.DescriptionMobile {
+  background-color: $costumeBgColor;
+  background-image: linear-gradient(
+      to top left,
+      $costumeBgColor 50%,
+      $appBgColor calc(50% + 2px)
+    ),
+    linear-gradient(
+      to bottom right,
+      $costumeBgColor 50%,
+      $appBgColor calc(50% + 2px)
+    );
+  background-position: 0 0, 100% 100%;
+  background-size: 100% 180px; /* 180px is controling the angle*/
+  background-repeat: no-repeat;
+}
+
+.DescriptionMobile {
+  background-size: 100% 50px;
+  margin-bottom: 55px;
+}
