@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
 import MainPage from "./MainContent/MainPage";
 import ComingSoon from "./ComingSoon";
 import Navbar from "./Navbar/Navbar";

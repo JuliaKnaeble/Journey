@@ -1,0 +1,7 @@
+@import "./SassVariables";
+
+.App {
+  font-family: $fontFamily;
+  margin: 0;
+  background-color: $appBgColor;
+}
