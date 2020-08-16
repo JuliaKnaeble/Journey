@@ -2,9 +2,8 @@
 
 .Header {
   padding-top: 200px;
-  margin-left: 10.7%;
-  margin-right: 10.7%;
-  @include flexCenter(space-between);
+  @include marginRightLeft(10.7%, 10.7%);
+  @include flex(space-between);
 
   @media (min-width: 1100px) {
     @include marginDesktop;

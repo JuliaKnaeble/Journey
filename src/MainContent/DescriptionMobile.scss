@@ -1,0 +1,129 @@
+@import "../SassVariables";
+
+.description-mobile-first,
+.description-mobile-second {
+  margin: 0;
+  @include flex(space-between);
+  @include marginRightLeft(15.5%, 15.5%);
+
+  @media (min-width: 1300px) {
+    @include marginDesktop;
+    width: 1000px;
+  }
+
+  @media (max-width: 675px) {
+    flex-direction: column;
+    @include marginMobile;
+    text-align: center;
+  }
+}
+
+.description-mobile-first {
+  @media (max-width: 675px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.mobile-start,
+.mobile-end {
+  width: 349px;
+  height: 704px;
+  @include positionRelative(10);
+
+  @media (max-width: 675px) {
+    width: 193px;
+    height: 417px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.header-first,
+.header-second {
+  margin: 0;
+  font-weight: $fontWeightPrimary;
+  font-size: 1.75rem;
+  line-height: 40px;
+  color: $fontColorOnDarkBg;
+
+  @media (max-width: 675px) {
+    font-size: 1.5rem;
+    line-height: 34px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.description-indent-first {
+  margin-top: 268px;
+  @include positionRelative(10);
+  padding-left: 120px;
+
+  @media (max-width: 675px) {
+    margin-top: 90px;
+    padding-left: 0;
+  }
+}
+
+.description-indent-second {
+  margin-top: 150px;
+  @include positionRelative(10);
+  padding-right: 120px;
+
+  @media (max-width: 675px) {
+    margin-top: 50px;
+    padding-right: 0;
+  }
+}
+
+.paragraph-first,
+.paragraph-second {
+  margin: 0;
+  font-weight: $fontWeightSecondary;
+  font-size: 1.125rem;
+  line-height: 36px;
+  margin-top: 39.5px;
+  color: $fontColorOnDarkBg;
+
+  @media (max-width: 675px) {
+    font-size: 1rem;
+    line-height: 26px;
+    margin-top: 22px;
+  }
+}
+
+.paragraph-first {
+  margin-bottom: 347px;
+
+  @media (max-width: 675px) {
+    margin-bottom: 54px;
+  }
+}
+
+.dot-description-mobile-first,
+.dot-description-mobile-second {
+  margin: 0;
+  width: 10px;
+  height: 10px;
+  border: 8px solid $fontColorHighlighted;
+  border-radius: 50%;
+  @include positionRelative(10);
+  bottom: 20px;
+
+  @media (max-width: 675px) {
+    display: none;
+  }
+}
+
+@media (max-width: 675px) {
+  .mobile-start {
+    margin-bottom: 80px;
+  }
+  .mobile-end {
+    position: relative;
+    top: 50px;
+  }
+  .paragraph-second {
+    margin-bottom: 0;
+  }
+}

@@ -7,9 +7,14 @@ $fontColorGeneralApp: #2a2a2a;
 $fontColorHighlighted: #ff4e21;
 $fontColorOnDarkBg: #ffffff;
 
-@mixin flexCenter($justify) {
+@mixin flex($justify) {
   display: flex;
   justify-content: $justify;
+}
+
+@mixin marginRightLeft($right, $left) {
+  margin-right: $right;
+  margin-left: $left;
 }
 
 @mixin marginMobile {
@@ -20,4 +25,9 @@ $fontColorOnDarkBg: #ffffff;
 @mixin marginDesktop {
   margin-left: auto;
   margin-right: auto;
+}
+
+@mixin positionRelative($zIndex) {
+  position: relative;
+  z-index: $zIndex;
 }

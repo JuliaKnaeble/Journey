@@ -1,5 +1,5 @@
 import React from "react";
-import "./DescriptionMobile.css";
+import "./DescriptionMobile.scss";
 
 const DescriptionMobile = () => {
   return (
