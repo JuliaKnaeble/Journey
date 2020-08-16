@@ -22,9 +22,10 @@ $fontColorOnDarkBg: #ffffff;
   margin-right: 7.5%;
 }
 
-@mixin marginDesktop {
+@mixin marginDesktop($width) {
   margin-left: auto;
   margin-right: auto;
+  width: $width;
 }
 
 @mixin positionRelative($zIndex) {

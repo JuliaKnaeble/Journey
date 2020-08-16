@@ -6,13 +6,11 @@
   @include flex(space-between);
 
   @media (min-width: 1100px) {
-    @include marginDesktop;
-    width: 1100px;
+    @include marginDesktop(1100px);
   }
 
   @media (min-width: 1800px) {
-    @include marginDesktop;
-    width: 1250px;
+    @include marginDesktop(1250px);
   }
 
   @media (max-width: 675px) {

@@ -1,0 +1,76 @@
+@import "../SassVariables";
+
+.Map {
+  @include flex(space-between);
+  @include marginRightLeft(12.5%, 12.5%);
+  margin-top: 238px;
+
+  @media (min-width: 1300px) {
+    @include marginDesktop(1000px);
+  }
+
+  @media (max-width: 675px) {
+    flex-direction: column;
+    margin-top: 68px;
+    text-align: center;
+    @include marginMobile;
+  }
+}
+
+.header-map {
+  margin: 0;
+  color: $fontColorGeneralApp;
+  font-weight: $fontWeightPrimary;
+  font-size: 1.75rem;
+  line-height: 40px;
+
+  @media (max-width: 675px) {
+    font-size: 1.5rem;
+    line-height: 34px;
+  }
+}
+
+.image-map {
+  width: 386px;
+  height: 205px;
+  position: relative;
+
+  @media (max-width: 675px) {
+    width: 270px;
+    height: 144px;
+    padding-bottom: 45px;
+  }
+}
+
+.text-map {
+  margin: 0;
+  padding-top: 33px;
+  padding-right: 70px;
+  padding-bottom: 238px;
+  color: $fontColorGeneralApp;
+  font-weight: $fontWeightSecondary;
+  font-size: 1.125rem;
+  line-height: 36px;
+
+  @media (max-width: 675px) {
+    font-size: 1rem;
+    line-height: 26px;
+    padding-bottom: 35px;
+    padding-right: 0;
+  }
+}
+
+.dot-map {
+  margin: 0;
+  width: 10px;
+  height: 10px;
+  border: 8px solid $fontColorHighlighted;
+  border-radius: 50%;
+  position: relative;
+  bottom: 15px;
+  right: 5px;
+
+  @media (max-width: 675px) {
+    display: none;
+  }
+}

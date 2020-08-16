@@ -7,8 +7,7 @@
   @include marginRightLeft(15.5%, 15.5%);
 
   @media (min-width: 1300px) {
-    @include marginDesktop;
-    width: 1000px;
+    @include marginDesktop(1000px);
   }
 
   @media (max-width: 675px) {
