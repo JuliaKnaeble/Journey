@@ -1,23 +1,23 @@
+@import "../SassVariables";
+
 .NavbarMobile {
   display: none;
 }
 
 @media (max-width: 675px) {
   .NavbarMobile {
-    justify-content: space-between;
-    display: flex;
+    @include flex(space-between);
+    @include positionRelative(10);
     padding-top: 30px;
     padding-bottom: 42px;
     height: 40px;
-    position: relative;
-    z-index: 10;
   }
+
   .brand-mobile {
     margin-left: 7.5%;
     font-weight: 700;
-    display: flex;
+    @include flex(center);
     align-items: center;
-    justify-content: center;
   }
 
   .logo-mobile {
@@ -29,7 +29,7 @@
 
   .brand-name-mobile {
     font-size: 1.5rem;
-    color: #ffffff;
+    color: $fontColorOnDarkBg;
     line-height: 30px;
   }
 
@@ -43,9 +43,9 @@
 }
 
 .mobile-menu {
-  color: #ffffff;
+  color: $fontColorOnDarkBg;
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: $fontWeightPrimary;
   line-height: 23px;
   display: flex;
   text-align: center;
@@ -70,10 +70,9 @@
   height: 30px;
   display: block;
   margin: 0 auto;
-}
-
-.mobile-menu-items:hover {
-  color: #ff4e21;
+  &:hover {
+    color: $fontColorHighlighted;
+  }
 }
 
 .mobile-button {

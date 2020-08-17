@@ -1,0 +1,83 @@
+@import "../SassVariables";
+
+.Navbar {
+  @include flex(space-between);
+  @include positionRelative(10);
+  align-items: center;
+  margin-left: 11.7%;
+  margin-right: 11.7%;
+  padding-top: 44px;
+  padding-bottom: 82px;
+  height: 40px;
+
+  @media (min-width: 1100px) {
+    @include marginDesktop(1100px);
+  }
+  @media (min-width: 1800px) {
+    @include marginDesktop(1250px);
+  }
+  @media (max-width: 675px) {
+    display: none;
+  }
+}
+
+.main-navigation {
+  @include flex(space-between);
+  align-items: center;
+  width: 594px;
+}
+
+.nav-item {
+  color: $fontColorOnDarkBg;
+  font-weight: $fontWeightMedium;
+  font-size: 0.875rem;
+  margin: 0 auto;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.nav-item:hover {
+  cursor: pointer;
+  color: $fontColorHighlighted;
+  text-decoration-color: rgba(255, 255, 255, 0.4);
+}
+
+button {
+  font-weight: $fontWeightMedium;
+  font-size: 0.875rem;
+  font-family: $fontFamily;
+  color: $fontColorOnDarkBg;
+  background-color: $fontColorHighlighted;
+  border: solid $fontColorHighlighted;
+  width: 161px;
+  height: 40px;
+  border-radius: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  outline: none;
+  &:hover {
+    cursor: pointer;
+    background-color: $fontColorOnDarkBg;
+    border: solid $fontColorOnDarkBg;
+    color: $fontColorHighlighted;
+  }
+}
+
+.brand {
+  @include flex(center);
+  align-items: center;
+  font-weight: $fontWeightPrimary;
+  margin-right: 15px;
+}
+
+.logo {
+  height: 30px;
+  width: 30px;
+  margin-top: 5px;
+}
+
+.brand-name {
+  margin-left: 14px;
+  font-size: 1.5rem;
+  color: $fontColorOnDarkBg;
+}

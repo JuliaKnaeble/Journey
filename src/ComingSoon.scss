@@ -1,3 +1,5 @@
+@import "./SassVariables";
+
 .ComingSoon {
   position: fixed;
   top: 0;
@@ -8,23 +10,28 @@
   background-repeat: no-repeat;
   background-image: url("https://files.cargocollective.com/c390151/main_bg.jpg");
   box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.5);
-  font-family: "Montserrat", sans-serif;
+  font-family: $fontFamily;
 }
 
 .soon-text {
   text-align: center;
-  font-weight: 700;
-  color: white;
+  font-weight: $fontWeightPrimary;
+  color: $fontColorOnDarkBg;
   font-size: 3.5rem;
   margin: 0;
   padding-top: 20%;
+
+  @media (max-width: 675px) {
+    font-size: 1.5rem;
+    padding-top: 65%;
+  }
 }
 
 /* for text style of the credits section see Footer component */
 
 .coming-soon-credits {
   text-align: center;
-  font-weight: 400;
+  font-weight: $fontWeightSmall;
   font-size: 12px;
   position: fixed;
   bottom: 10px;

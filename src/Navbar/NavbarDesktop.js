@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
-import "./NavbarDesktop.css";
+import "./NavbarDesktop.scss";
 
 const NavbarDesktop = () => {
   const [activeHome, setActiveHome] = useState({});

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
-import "./NavbarMobile.css";
+import "./NavbarMobile.scss";
 
 const NavbarMobile = () => {
   const [clicked, setClicked] = useState(false);
