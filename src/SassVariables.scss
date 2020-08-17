@@ -32,3 +32,11 @@ $fontColorOnDarkBg: #ffffff;
   position: relative;
   z-index: $zIndex;
 }
+
+@mixin smallDots($dotColor) {
+  margin: 0;
+  width: 10px;
+  height: 10px;
+  border: 8px solid $dotColor;
+  border-radius: 50%;
+}

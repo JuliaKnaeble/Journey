@@ -101,11 +101,7 @@
 
 .dot-description-mobile-first,
 .dot-description-mobile-second {
-  margin: 0;
-  width: 10px;
-  height: 10px;
-  border: 8px solid $fontColorHighlighted;
-  border-radius: 50%;
+  @include smallDots($fontColorHighlighted);
   @include positionRelative(10);
   bottom: 20px;
 

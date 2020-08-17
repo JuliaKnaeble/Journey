@@ -1,3 +1,5 @@
+@import "../SassVariables";
+
 .circle-container-three {
   position: absolute;
   left: 0;
@@ -6,6 +8,11 @@
   margin-right: auto;
   width: 1130px;
   height: 1130px;
+
+  @media (max-width: 675px) {
+    width: 360px;
+    height: 580px;
+  }
 }
 
 .circle-three {
@@ -15,6 +22,11 @@
   height: 100%;
   position: relative;
   bottom: 120%;
+
+  @media (max-width: 675px) {
+    clip-path: circle(53.7% at 17% 49%);
+    bottom: 235%;
+  }
 }
 
 .clircle-center-three {
@@ -24,21 +36,9 @@
   bottom: 197%;
   position: relative;
   left: 15%;
-  background-color: #0a0b10;
-}
+  background-color: $costumeBgColor;
 
-@media (max-width: 675px) {
-  .circle-container-three {
-    width: 360px;
-    height: 580px;
-  }
-
-  .circle-three {
-    clip-path: circle(53.7% at 17% 49%);
-    bottom: 235%;
-  }
-
-  .clircle-center-three {
+  @media (max-width: 675px) {
     clip-path: circle(53.7% at 17% 49%);
     bottom: 315%;
     left: 0;

@@ -1,9 +1,15 @@
+@import "../SassVariables";
+
 .circle-container {
   position: absolute;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: 0;
+
+  @media (max-width: 675px) {
+    display: none;
+  }
 }
 
 .circle {
@@ -19,14 +25,8 @@
   clip-path: circle(50% at 50% 50%);
   width: 55%;
   height: 55%;
-  background-color: #f8f9fa;
+  background-color: $appBgColor;
   bottom: 115%;
   position: relative;
   left: 36%;
-}
-
-@media (max-width: 675px) {
-  .circle-container {
-    display: none;
-  }
 }

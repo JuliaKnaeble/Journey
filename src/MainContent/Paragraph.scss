@@ -1,0 +1,70 @@
+@import "../SassVariables";
+
+.Paragraph {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  @media (max-width: 675px) {
+    @include marginMobile;
+  }
+}
+
+.header-paragraph {
+  margin: 0;
+  color: $fontColorHighlighted;
+  font-weight: $fontWeightPrimary;
+  font-size: 1.75rem;
+  line-height: 40px;
+  padding-top: 91px;
+  padding-bottom: 31px;
+  @include positionRelative(10);
+
+  @media (max-width: 675px) {
+    font-size: 1.5rem;
+    line-height: 34px;
+    padding-top: 51px;
+    z-index: 0;
+  }
+}
+
+.text-paragraph {
+  margin: 0;
+  padding-right: 28%;
+  padding-left: 28%;
+  color: $fontColorGeneralApp;
+  font-weight: $fontWeightSecondary;
+  font-size: 1.125rem;
+  line-height: 36px;
+  @include positionRelative(10);
+
+  @media (min-width: 1300px) {
+    padding-right: 32%;
+    padding-left: 32%;
+  }
+  @media (max-width: 675px) {
+    font-size: 1rem;
+    line-height: 26px;
+    padding: 0;
+    z-index: 0;
+  }
+}
+
+.dot-paragraph {
+  @include smallDots(rgba(0, 0, 0, 0.1));
+  @include positionRelative(10);
+
+  @media (max-width: 675px) {
+    display: none;
+  }
+}
+
+.top {
+  left: 15%;
+  top: 45px;
+}
+
+.bottom {
+  left: 73%;
+  top: 60px;
+}

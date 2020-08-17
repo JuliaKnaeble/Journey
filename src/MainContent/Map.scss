@@ -61,11 +61,7 @@
 }
 
 .dot-map {
-  margin: 0;
-  width: 10px;
-  height: 10px;
-  border: 8px solid $fontColorHighlighted;
-  border-radius: 50%;
+  @include smallDots($fontColorHighlighted);
   position: relative;
   bottom: 15px;
   right: 5px;
