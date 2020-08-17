@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Header from "./Header";
 import Paragraph from "./Paragraph";
 import MobileDisplay from "./MobileDisplay";
@@ -20,30 +20,18 @@ function MainPage() {
     height: `820px`,
   };
 
-  const [opacityOne, setOpacityOne] = useState({ opacity: 0.2 });
-  const [opacityTwo, setOpacityTwo] = useState({ opacity: 0.5 });
-
-  function showContentOne() {
-    setOpacityOne({ opacity: 1 });
-  }
-
-  function showContentTwo() {
-    setOpacityTwo({ opacity: 1 });
-  }
-
   return (
     <div className="App">
       <div className="header-background">
         <Header />
       </div>
-      <div onMouseEnter={showContentOne}>
+      <div>
         <Paragraph
           id={"paragraph-one"}
           header={`Multiple ways to view your Journey`}
           paragraph={`Easily navigate between views to get the best idea of how your Journey is laid out. View your entire itinerary, dive into a specific day or use the calendar view to make sure you have time to do everything you planned.`}
         />
         <MobileDisplay
-          style={opacityOne}
           mobileOne={`left`}
           mobileTwo={`middle`}
           mobileThree={`right`}
@@ -55,7 +43,7 @@ function MainPage() {
         <DescriptionMobile />
       </div>
       <CircleLeft />
-      <div onMouseEnter={showContentTwo}>
+      <div>
         <Paragraph
           id={"paragraph-two"}
           header={`Get a head start on your next Journey`}
@@ -63,7 +51,6 @@ function MainPage() {
         />
         <CircleRight mainSize={circleRightTwo} />
         <MobileDisplay
-          style={opacityTwo}
           mobileOne={`venice`}
           mobileTwo={`tokyo`}
           mobileThree={`thailand`}

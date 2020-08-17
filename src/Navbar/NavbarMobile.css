@@ -52,7 +52,7 @@
   flex-direction: column;
   backdrop-filter: blur(5px);
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.75);
   top: 0;
   height: 100%;
   width: 100%;
@@ -65,7 +65,7 @@
 }
 
 .menu-logo {
-  padding-top: 170px;
+  padding-top: 150px;
   width: 30px;
   height: 30px;
   display: block;
@@ -78,5 +78,6 @@
 
 .mobile-button {
   display: block;
-  margin: 153px auto 0;
+  margin: 0 auto;
+  margin-top: 90px;
 }
