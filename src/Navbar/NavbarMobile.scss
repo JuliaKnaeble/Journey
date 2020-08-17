@@ -15,7 +15,7 @@
 
   .brand-mobile {
     margin-left: 7.5%;
-    font-weight: 700;
+    font-weight: $fontWeightPrimary;
     @include flex(center);
     align-items: center;
   }
