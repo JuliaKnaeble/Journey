@@ -79,7 +79,7 @@ const NavbarDesktop = () => {
           News
         </Link>
         <Link
-          to="/coming/soon"
+          to="/coming-soon"
           className="nav-item"
           onClick={handleClickApi}
           style={activeApi}
@@ -96,7 +96,7 @@ const NavbarDesktop = () => {
           Contact
         </ScrollLink>
       </div>
-      <Link to="/coming/soon">
+      <Link to="/coming-soon">
         <button onClick={handleButtonClick}>Download Now</button>
       </Link>
     </nav>
