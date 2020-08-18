@@ -29,7 +29,7 @@ const NavbarMobile = () => {
         <div className="mobile-menu-items">Contact</div>
         <button
           className="mobile-button"
-          onClick={() => setClicked(!clicked) & history.push("/coming/soon")}
+          onClick={() => setClicked(!clicked) & history.push("/coming-soon")}
         >
           Download Now
         </button>
